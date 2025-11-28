@@ -1,6 +1,6 @@
 # Hi, I'm Manuel 👋
 
-## 🚀 Transitioning: Bookkeeper → Data Analyst → LLM Engineer
+## 🚀 Transitioning: Bookkeeper → Data Analyst → Data Engineer → ML Engineer → LLM Engineer
 
 I'm on a **37-month journey** combining **finance, trading, data science, and AI** to build intelligent trading systems.
 
@@ -19,9 +19,13 @@ I'm on a **37-month journey** combining **finance, trading, data science, and AI
 
 **The Edge:** Most data analysts don't understand trading. Most traders can't code. I'm building both.
 
+🌐 [GitHub Pages Site](https://manuel-reyes-ml.github.io/learning_journey/) - Landing page
+
 ---
 
 ## 🎯 My Roadmap
+
+**[📋 View detailed 37-month roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
 
 **Stage 1 (NOW - Month 5): Data Analyst** 🟢  
 *Goal: Land first tech job!*
