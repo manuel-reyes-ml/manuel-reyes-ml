@@ -1,6 +1,6 @@
 # Hi, I'm Manuel 👋
 
-## 🚀 Transitioning: Bookkeeper → Data Analyst → Data Engineer → ML Engineer → LLM Engineer
+## 🚀 Transitioning: Financial Services Professional → Data Analyst → Data Engineer → ML Engineer → LLM Engineer
 
 I'm on a **37-month journey** combining **finance, trading, data science, and AI** to build intelligent trading systems.
 
@@ -12,7 +12,7 @@ I'm on a **37-month journey** combining **finance, trading, data science, and AI
 ## 💼 What Makes Me Different
 
 🎯 **Rare Skill Combination:**
-- 📈 **Finance Background:** Retirement bookkeeping + active trader (swing/day trading)
+- 📈 **Finance Background:** Financial services professional + active trader (swing/day trading)
 - 🐍 **Technical Skills:** Python, SQL, Data Analysis, Statistics
 - 🤖 **AI Focus:** Building toward ML & LLM Engineering
 - 💰 **Domain Expertise:** Market structure, trading algorithms, quantitative finance
@@ -160,7 +160,7 @@ I'm **building in public** and documenting everything:
 
 **Building in public:** I share my code, struggles, and solutions. Every commit shows learning, not just completion.
 
-**Long-term thinking:** 37 months to go from bookkeeper to Senior LLM Engineer building AI trading systems. One day at a time.
+**Long-term thinking:** 37 months to go from Financial Services Professional to Senior LLM Engineer building AI trading systems. One day at a time.
 
 ---
 
@@ -224,7 +224,7 @@ I'm **building in public** and documenting everything:
 
 ---
 
-**💡 "From bookkeeping to LLM engineering - proving it's never too late to reinvent yourself."**
+**💡 "From Financial Services Professional to LLM engineering - proving it's never too late to reinvent yourself."**
 
 ⭐️ Star my repos if you find them useful!  
 🔔 Follow for daily updates on my journey!
