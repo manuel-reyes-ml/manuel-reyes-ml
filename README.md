@@ -218,7 +218,7 @@ I'm **building in public** and documenting everything:
 
 - 📈 I've been trading for 10+ years (swing & day trading)
 - 🎯 I study 25 hours/week (4:30 AM club member!)
-- 🌎 Planning to move to Spain with EU citizenship path
+- ♟️ I'm really good at Chess!
 - 🤖 Fascinated by how AI is transforming financial markets
 - 📚 Reading: "Machine Learning for Algorithmic Trading" + "Hands-On LLMs"
 
