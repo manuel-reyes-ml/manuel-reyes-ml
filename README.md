@@ -138,13 +138,10 @@ I'm **building in public** and documenting everything:
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=manuel-reyes-ml&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact&theme=dark&hide_border=true)
-
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=dark&hide_border=true)
 
 </div>
+
 
 ---
 
