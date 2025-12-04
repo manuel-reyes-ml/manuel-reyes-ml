@@ -136,9 +136,9 @@ I'm **building in public** and documenting everything:
 
 ## 📊 GitHub Stats
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=manuel-reyes-ml&show_icons=true&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=manuel-reyes-ml&show_icons=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact&theme=dark)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact)
 
 ---
 
