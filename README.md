@@ -153,7 +153,7 @@ I'm **building in public** and documenting everything:
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=dark&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=dark&hide_border=true&v=2)
 
 </div>
 
