@@ -81,23 +81,38 @@ Trading:       QuantLib, Backtrader, yfinance
 
 ## 📌 Featured Projects
 
-### 🤖 Algorithmic Trading Dashboard (WIP)
-> Real-time market data analysis with 10+ technical indicators
-- **Tech:** Python, Pandas, Plotly, yfinance
-- **Features:** RSI, MACD, Bollinger Bands, SMA/EMA, volume analysis
-- **Stage 1 Deliverable** - Building now!
+### 🗂️ [Data Portfolio Hub](https://github.com/manuel-reyes-ml/data-portfolio)
+> Central index of all data analysis & engineering projects
+- **Purpose:** Portfolio hub linking to production-ready projects
+- **Tech:** Python, SQL, pandas, Excel automation
+- **Includes:** Financial data pipelines, market analysis, reconciliation systems
+- [**Explore all projects →**](https://github.com/manuel-reyes-ml/data-portfolio)
 
-### 📊 IBM Data Analyst Capstone
-> End-to-end data analysis project (Professional Certificate)
-- **Tech:** Python, SQL, Jupyter, Matplotlib
-- **Focus:** Data cleaning, EDA, statistical analysis, visualization
-- Coming Month 4-5
+---
 
-### 📈 Google Analytics Case Study
-> Business intelligence & data storytelling
-- **Tech:** SQL, Tableau, R
-- **Focus:** Dashboard creation, stakeholder communication
-- Coming Month 4-5
+### 🧾 [1099 Reconciliation Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
+> Production ETL pipeline for retirement plan distributions
+- **Impact:** 95% time reduction, $15K annual savings, 98% accuracy
+- **Tech:** Python, pandas, openpyxl, Excel
+- **Skills:** Data cleaning, fuzzy matching, automated reporting
+- **Status:** Production deployment (synthetic demo data available)
+
+---
+
+### 📈 [Trading Attention Tracker](https://github.com/manuel-reyes-ml/trading_attention_tracker)
+> Correlating stock volume with news mentions, Wikipedia views, and sentiment
+- **Tech:** Python, SQLite, pandas, yfinance, Wikipedia API
+- **Skills:** Multi-format parsing (CSV, JSON, XML), time-series analysis, visualization
+- **Stage:** Phase 2 - Live API integration
+- **Note:** Capstone for Python for Everybody Specialization
+  
+---
+
+### 📊 IBM Data Analyst Capstone (Planned)
+> Technology trends analysis using Stack Overflow data (Professional Certificate)
+- **Tech:** Python, SQL, Jupyter, Matplotlib, Cognos
+- **Focus:** Data cleaning, EDA, statistical analysis, dashboard creation
+- **Status:** Completed - IBM Data Analyst Professional Certificate
 
 ---
 
