@@ -1,250 +1,409 @@
 # Hi, I'm Manuel 👋
 
-## 🚀 Transitioning: Financial Services Professional → Data Analyst → Data Engineer → ML Engineer → LLM Engineer
+**Building Production AI Trading Systems** | Finance → Data → ML → LLM Engineering  
+Week 1 of 37-month public journey | Currently: Stage 1 (Data Analyst)
 
-I'm on a **37-month journey** combining **finance, trading, data science, and AI** to build intelligent trading systems.
-
-**Current Focus (Stage 1 - Months 1-5):**  
-📊 Securing my first **Data Analyst role** while building a unique skill set at the intersection of finance and technology.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-667eea)](https://github.com/manuel-reyes-ml/data-portfolio)
 
 ---
 
 ## 💼 What Makes Me Different
 
-🎯 **Rare Skill Combination:**
-- 📈 **Finance Background:** Financial services professional + active trader (swing/day trading)
-- 🐍 **Technical Skills:** Python, SQL, Data Analysis, Statistics
-- 🤖 **AI Focus:** Building toward ML & LLM Engineering
-- 💰 **Domain Expertise:** Market structure, trading algorithms, quantitative finance
+Most entry-level candidates have tutorial projects. **I have production code with measurable business impact.**
 
-**The Edge:** Most data analysts don't understand trading. Most traders can't code. I'm building both.
+🏆 **Unique Value Proposition:**
+- ✅ **Production ETL system** deployed and running (95% time reduction, $15K/year savings)
+- ✅ **Public code** for review (smart data privacy with synthetic test data)
+- ✅ **10+ years finance expertise** (bookkeeping, financial reporting, retirement plans)
+- ✅ **6+ years trading experience** (swing/day trading, technical analysis, quantitative strategies)
+- ✅ **Systematic learning path** (37-month roadmap from DA to Senior LLM Engineer)
+- ✅ **Building in public** (transparent progress, consistent commits)
 
-🌐 [GitHub Pages Site](https://manuel-reyes-ml.github.io/learning_journey/) - Landing page
-
----
-
-## 🎯 My Roadmap
-
-**[📋 View detailed 37-month roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
-
-**Stage 1 (NOW - Month 5): Data Analyst** 🟢  
-*Goal: Land first tech job!*
-- CS50 (Harvard) - Computer Science fundamentals
-- Python for Everybody (University of Michigan)
-- Google Data Analytics Professional Certificate
-- IBM Data Analyst Professional Certificate (11 courses)
-- Statistics with Python (University of Michigan)
-- **Portfolio:** Market data analysis, technical indicators dashboard
-
-**Stage 2 (Months 6-15): Data Engineer** ⚪  
-*Build production data systems for trading*
-- AWS, PostgreSQL, PySpark, Airflow
-- Real-time trading data pipelines
-
-**Stage 3 (Months 16-29): ML Engineer** ⚪  
-*Apply machine learning to trading*
-- ML algorithms, model training, backtesting
-- Portfolio optimization with ML
-
-**Stage 4 (Months 30-34): LLM Engineer** ⚪  
-*Build AI-powered trading systems*
-- Prompt engineering, RAG, fine-tuning
-- **Capstone: AI Trading Assistant**
-
-**Stage 5 (Months 35-37): Senior Engineer** ⚪  
-*Thought leadership & monetization*
-- Production AI systems, consulting, content creation
+**The Combination:** Domain expertise (finance/trading) + Production experience + Technical skills + Clear growth trajectory
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 Quick Navigation
 
-**Current (Stage 1):**
-```
-Languages:     Python, SQL
-Analysis:      Pandas, NumPy, Matplotlib, Seaborn, Plotly
-Tools:         Jupyter, Git, VS Code
-Databases:     PostgreSQL basics
-Platforms:     Kaggle, HackerRank
-```
+**For Recruiters:**
+1. 💼 **[Projects Portfolio](https://github.com/manuel-reyes-ml/data-portfolio)** ← START HERE (production + learning projects)
+2. 🧾 **[1099 ETL Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)** ← Production system (public code)
+3. 📊 **[37-Month Roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)** ← Complete career plan
+4. 🔗 **[LinkedIn Profile](https://www.linkedin.com/in/mr410/)** ← Professional presence
 
-**Learning Next:**
-```
-Cloud:         AWS (Data Engineer, Solutions Architect)
-Big Data:      PySpark, Airflow
-ML:            Scikit-learn, TensorFlow, PyTorch
-LLM:           LangChain, Vector DBs, Fine-tuning
-Trading:       QuantLib, Backtrader, yfinance
-```
+**For Fellow Learners:**
+- 📚 **[Learning Journey](https://github.com/manuel-reyes-ml/learning_journey)** ← Course materials & progress
+- 📈 **[Trading Tracker](https://github.com/manuel-reyes-ml/trading_attention_tracker)** ← Capstone project
 
 ---
 
-## 📌 Featured Projects
+## 🚀 Featured: Production Project
 
-### 🗂️ [Data Portfolio Hub](https://github.com/manuel-reyes-ml/data-portfolio)
-> Central index of all data analysis & engineering projects
-- **Purpose:** Portfolio hub linking to production-ready projects
-- **Tech:** Python, SQL, pandas, Excel automation
-- **Includes:** Financial data pipelines, market analysis, reconciliation systems
-- [**Explore all projects →**](https://github.com/manuel-reyes-ml/data-portfolio)
+### 🧾 [1099 Reconciliation ETL Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
+**Status:** ✅ Live in production at Daybright Financial | 🌐 Public repository
+
+**The Business Problem:**  
+Manual reconciliation of retirement plan distributions took 4-6 hours weekly, was error-prone, and blocked critical 1099-R tax reporting.
+
+**The Solution:**  
+Built automated Python ETL pipeline extracting, transforming, validating, and reconciling data from two financial systems (Relius and Matrix).
+
+**Business Impact:**
+- ⚡ **95% time reduction** (4-6 hours → 15 minutes weekly)
+- 💰 **$15K+ annual savings** in labor costs  
+- 📊 **10x scalability** (handles 300+ accounts vs. 30 manual capacity)
+- ✅ **Zero errors** since deployment (comprehensive validation)
+
+**Why It's Public:**  
+Uses synthetic test data (Python `faker` module) demonstrating professional data governance—full code review possible while maintaining client privacy.
+
+**Tech Stack:** Python • pandas • openpyxl • Excel • data validation • faker
+
+[**→ View Code & Run Locally**](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
 
 ---
 
-### 🧾 [1099 Reconciliation Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
-> Production ETL pipeline for retirement plan distributions
-- **Impact:** 95% time reduction, $15K annual savings, 98% accuracy
-- **Tech:** Python, pandas, openpyxl, Excel
-- **Skills:** Data cleaning, fuzzy matching, automated reporting
-- **Status:** Production deployment (synthetic demo data available)
-
----
+## 📊 Portfolio Projects
 
 ### 📈 [Trading Attention Tracker](https://github.com/manuel-reyes-ml/trading_attention_tracker)
-> Correlating stock volume with news mentions, Wikipedia views, and sentiment
-- **Tech:** Python, SQLite, pandas, yfinance, Wikipedia API
-- **Skills:** Multi-format parsing (CSV, JSON, XML), time-series analysis, visualization
-- **Stage:** Phase 2 - Live API integration
-- **Note:** Capstone for Python for Everybody Specialization
-  
+**Status:** 🚧 Phase 2 (v1.1 in progress) | 🌐 Public repository
+
+Multi-source data pipeline correlating stock trading volume with public attention (news mentions, Wikipedia pageviews, sentiment analysis).
+
+**Hypothesis:** Public attention spikes correlate with trading volume increases.
+
+**Technical Highlights:**
+- End-to-end pipeline: APIs → SQLite → Analysis → Visualization
+- Multiple data sources: yfinance, Wikipedia API, RSS feeds, web scraping
+- Normalized database (5 related tables)
+- Basic sentiment analysis + time-series correlation
+
+**Evolution Roadmap:**
+- ✅ v1.0 (Dec 2025): Core pipeline, 3 tickers
+- 🚧 v1.1 (Jan 2026): Expand to 10+ tickers, CSV exports
+- 📅 v2.0 (Feb 2026): Interactive Streamlit dashboard
+- 📅 v3.0 (Mar 2026): ML models predicting volume
+
+**Tech Stack:** Python • SQLite • pandas • yfinance • Wikipedia API • BeautifulSoup • Matplotlib
+
+[**→ View Project**](https://github.com/manuel-reyes-ml/trading_attention_tracker)
+
 ---
 
-### 📊 IBM Data Analyst Capstone (Planned)
-> Technology trends analysis using Stack Overflow data (Professional Certificate)
-- **Tech:** Python, SQL, Jupyter, Matplotlib, Cognos
-- **Focus:** Data cleaning, EDA, statistical analysis, dashboard creation
-- **Status:** Completed - IBM Data Analyst Professional Certificate
+### 📚 More Projects
+
+**Upcoming (Stage 1 - Months 2-4):**
+- 📊 **Financial Data Dashboard** (Interactive Streamlit app)
+- 🤖 **ML Trading Strategy Prototype** (First ML models)
+- 📈 **IBM Data Analyst Capstone** (Certification project)
+
+**[→ View All Projects](https://github.com/manuel-reyes-ml/data-portfolio)**
 
 ---
 
-## 📚 Learning Journey
+## 🗺️ The 37-Month Roadmap
 
-I'm **building in public** and documenting everything:
+Systematic progression from Data Analyst to Senior LLM Engineer:
 
-📖 **[learning-journey](https://github.com/manuel-reyes-ml/learning_journey)** - Daily practice, experiments, and enhancements
-- Python exercises & experiments
-- SQL query practice & optimization
-- Trading analysis & research
-- Course notes & summaries
+| Stage | Timeline | Role | Focus | Status |
+|-------|----------|------|-------|--------|
+| **1** | Months 1-5 | **Data Analyst** | Python, SQL, Statistics, Visualization | 🟢 **IN PROGRESS** |
+| **2** | Months 6-15 | **Data Engineer** | AWS, Pipelines, Big Data, ETL at Scale | ⚪ Planned |
+| **3** | Months 16-29 | **ML Engineer** | Machine Learning, Model Deployment, MLOps | ⚪ Planned |
+| **4** | Months 30-34 | **LLM Specialist** | LLMs, RAG, Vector DBs, Fine-tuning | ⚪ Planned |
+| **5** | Months 35-37 | **Senior LLM Engineer** | Production AI, Leadership, Thought Leadership | 🎯 Goal |
 
-*Not just homework - I enhance, test, and optimize every exercise!*
+**Current Progress:** Week 1 of 160 | Stage 1 (Data Analyst)  
+**Next Milestone:** Data Analyst job by Month 5 (April 2026)
+
+**[→ View Interactive Roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
+
+---
+
+## 🛠️ Technical Skills
+
+### **Current Proficiency (Stage 1):**
+```
+Languages:     Python 3.11+, SQL
+Data Analysis: pandas, NumPy, Matplotlib, Seaborn, Plotly
+Databases:     SQLite, PostgreSQL (learning)
+Tools:         Jupyter, Git/GitHub, VS Code, Excel (advanced)
+APIs & Web:    REST APIs, JSON/XML parsing, BeautifulSoup
+```
+
+### **Domain Expertise:**
+```
+Finance:       10+ years bookkeeping, financial reporting, retirement plans
+Trading:       6+ years active trading, technical analysis, market structure
+Business:      Process automation, ROI analysis, ETL pipelines
+```
+
+### **Currently Learning:**
+- Advanced SQL (window functions, CTEs, optimization)
+- Statistics with Python (distributions, hypothesis testing)
+- Data visualization best practices
+- AWS fundamentals
+
+### **Planned (Stages 2-5):**
+```
+Cloud & Big Data:  AWS (S3, Glue, Redshift, EMR), Apache Airflow, PySpark
+Machine Learning:  scikit-learn, TensorFlow, PyTorch, MLOps, model deployment
+LLM Engineering:   LangChain, RAG, vector databases, fine-tuning, agents
+Production:        Docker, Kubernetes, CI/CD, monitoring, scalability
+```
 
 ---
 
 ## 🎓 Certifications & Education
 
-**Completing:**
-- [ ] CS50: Introduction to Computer Science (Harvard) - *In Progress*
-- [ ] Python for Everybody Specialization (University of Michigan) - *In Progress*
+### **In Progress (Stage 1):**
+- 🚧 **CS50: Introduction to Computer Science** (Harvard)
+- 🚧 **Python for Everybody Specialization** (University of Michigan)  
+- 🚧 **Google Data Analytics Professional Certificate**
+- 🚧 **IBM Data Analyst Professional Certificate** (11 courses)
+- 📅 **Statistics with Python Specialization** (University of Michigan)
 
-**Next in line:**
-- [ ] Google Data Analytics Professional Certificate
-- [ ] IBM Data Analyst Professional Certificate (11 courses)
-- [ ] Statistics with Python Specialization (University of Michigan)
+### **Completed:**
+- ✅ **CS50 Week 0** (Scratch fundamentals)
+- ✅ **Python Setup & Environment** (Virtual environments, Git, VS Code)
 
-**Planned (2025-2027):**
+### **Planned (Stages 2-5):**
 - AWS Certified Data Engineer Associate
+- AWS Solutions Architect Associate  
 - TensorFlow Developer Certificate
 - Deep Learning Specialization (Andrew Ng)
-- 4+ LLM Engineering courses
+- Advanced LLM Engineering courses
 
 ---
 
-## 📊 GitHub Stats
+## 📚 Learning in Public
+
+### [Learning Journey Repository](https://github.com/manuel-reyes-ml/learning_journey)
+**37-month complete documentation** of transition from financial services to Senior LLM Engineer.
+
+**What's Inside:**
+- 📚 Course materials & comprehensive notes
+- 📝 Weekly progress summaries
+- 🛠️ Complete development setup guides
+- 📋 Structured week-by-week activation plans
+- 🎓 Certification progress tracking
+- 🧪 Enhanced exercises (beyond course requirements)
+
+**Commitment:** 25 hours/week (sustainable for 37 months)  
+**Approach:** Production-grade code from Day 1, building in public
+
+[**→ View Learning Journey**](https://github.com/manuel-reyes-ml/learning_journey)
+
+---
+
+## 💡 My Philosophy
+
+### **Why I'm Different:**
+
+**Most Candidates:**
+```
+✓ Tutorial projects
+✓ Online course completions
+✓ Basic Python/SQL knowledge
+✗ No production experience
+✗ No domain expertise
+✗ No measurable impact
+```
+
+**What I Bring:**
+```
+✓ Tutorial projects (enhanced beyond requirements)
+✓ Multiple certifications (in progress)
+✓ Advanced Python/SQL proficiency
+✓ Production ETL system (live, public code)
+✓ 10+ years finance + 6+ years trading expertise
+✓ Real business impact (95% efficiency, $15K savings)
+✓ Clear growth trajectory (37-month plan)
+✓ Building in public (accountability + transparency)
+```
+
+### **The Value Proposition:**
+
+> "I'm not just learning Python from tutorials. I've deployed a production system saving my company 20 hours/month. I understand finance deeply, think quantitatively about markets, and I'm systematically building toward advanced AI/ML skills. **The code is public, the impact is measurable, and the trajectory is clear.**"
+
+### **Building in Public:**
+- **Transparency:** Real learning is messy—showing actual process, not just results
+- **Accountability:** Public commits = public commitment
+- **Community:** Learning from others, sharing knowledge
+- **Portfolio:** This profile IS proof of ability, work ethic, and growth
+
+---
+
+## 📈 Current Focus (Week 1, November 2025)
+
+**This Week's Progress:**
+```
+✅ Completed Week 1 activation plan (25 hours)
+✅ 1099 ETL Pipeline deployed to production
+✅ CS50 Week 0 (Scratch) completed
+✅ Python basics (variables, operators, data types)
+✅ Repository structure optimized
+✅ LinkedIn career transition announced
+```
+
+**Learning This Month:**
+```
+🚧 Python for Everybody (Weeks 1-4)
+🚧 Trading Attention Tracker v1.0
+🚧 SQL fundamentals (SELECT, WHERE, JOIN)
+🚧 Daily coding practice (4:30 AM club!)
+```
+
+**Next Milestones:**
+```
+📅 Week 4: Complete CS50
+📅 Week 8: Python for Everybody certificate
+📅 Month 2: Trading Tracker v1.0 launch
+📅 Month 3: Start IBM Data Analyst courses
+📅 Month 5: Land Data Analyst job! 🎯
+```
+
+---
+
+## 📊 GitHub Activity
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=dark&hide_border=true&v=2)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=tokyonight&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact&theme=tokyonight&hide_border=true)
 
 </div>
 
-
 ---
 
-## 📈 Current Activity (Week 1-2)
+## 🎯 The Ultimate Goal
 
-```
-✅ CS50 Week 0 - Scratch completed
-🔄 Python basics - loops, functions, data structures
-🔄 SQL fundamentals - SELECT, JOIN, WHERE
-📝 Setting up trading data sources
-💻 20 min/day practice on Sololearn
-```
+### **AI Trading Assistant (Month 37)**
 
----
-
-## 💡 Philosophy
-
-> *"Innovation is the only path for the future. I'm combining 5+ years of finance experience with modern data & AI skills to build something unique."*
-
-**Building in public:** I share my code, struggles, and solutions. Every commit shows learning, not just completion.
-
-**Long-term thinking:** 37 months to go from Financial Services Professional to Senior LLM Engineer building AI trading systems. One day at a time.
-
----
-
-## 🌐 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mr410/)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
-
-📧 **Open to:** 
-- Data Analyst roles (remote, finance/trading preferred)
-- Networking with data professionals
-- Trading + tech collaborations
-- Mentorship opportunities
-
----
-
-## 📅 Timeline
-
-**November 2025:** Started learning journey  
-**Target Month 5 (April 2026):** Land Data Analyst role  
-**Target Month 15 (Feb 2027):** Data Engineer position  
-**Target Month 29 (April 2028):** ML Engineer role  
-**Target Month 37 (Dec 2028):** LLM Engineer role + AI Trading Assistant live  
-
----
-
-## 🏆 What I'm Building Toward
-
-**The Ultimate Goal:**
-> A production-grade **AI Trading Assistant** powered by LLMs that:
-> - Analyzes markets in real-time
-> - Generates trading signals using ML
-> - Provides natural language insights
-> - Executes algorithmic strategies
-> - Learns and adapts continuously
+Building toward a production-grade LLM-powered trading system that:
+- 🔍 Analyzes markets in real-time using multi-source data
+- 🤖 Generates trading signals with ML models
+- 💬 Provides natural language insights (LLM-powered)
+- ⚡ Executes algorithmic strategies automatically
+- 📊 Learns and adapts continuously (reinforcement learning)
 
 **Why This Matters:**
-- Combines finance domain knowledge with cutting-edge AI
-- Solves real problems (trading analysis is time-consuming)
-- Rare skill set in the market
+- Combines deep finance domain knowledge with cutting-edge AI
+- Solves real problem (trading analysis is time-consuming)
+- Rare skill set in market (finance + ML + LLM engineering)
 - Foundation for consulting/startup opportunities
+- Demonstrates end-to-end capability (data → ML → LLM → production)
+
+**Progressive Build:**
+- **Stage 1 (Now):** Data pipeline + analysis
+- **Stage 2:** Cloud infrastructure + real-time data
+- **Stage 3:** ML models + backtesting
+- **Stage 4:** LLM integration + natural language
+- **Stage 5:** Production deployment + monetization
 
 ---
 
-## 📖 Featured Repositories
+## 🌐 Connect & Collaborate
 
-1. 🤖 **[algorithmic-trading-dashboard]** - Stage 1: Market analysis with Python
-2. 📊 **[ibm-data-analyst-capstone]** - Professional certification project
-3. 📈 **[learning-journey]** - 37-month public learning documentation
-4. 💼 **[data-portfolio]** - Collection of data analysis projects
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mr410/)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/manuel-reyes-ml/data-portfolio)
+
+### **I'm Open To:**
+- 💼 **Data Analyst opportunities** (remote, finance/trading sector preferred)
+- 🤝 **Networking** with data professionals and traders
+- 📊 **Collaborations** on trading + tech projects
+- 💡 **Code reviews** and technical discussions
+- 🎓 **Mentorship** (giving or receiving)
+- 🎤 **Speaking** about career transitions
+
+### **Let's Connect If:**
+- You're hiring Data Analysts with finance domain expertise
+- You're building trading systems with modern tech
+- You're on a similar career transition journey
+- You want to discuss finance + AI intersection
+- You value production code over tutorial completions
 
 ---
 
 ## ⚡ Fun Facts
 
-- 📈 I've been trading for 10+ years (swing & day trading)
-- 🎯 I study 25 hours/week (4:30 AM club member!)
-- ♟️ I'm really good at Chess!
-- 🤖 Fascinated by how AI is transforming financial markets
-- 📚 Reading: "Machine Learning for Algorithmic Trading" + "Hands-On LLMs"
+- 📈 Active trader for 6+ years (swing & day trading strategies)
+- 🌅 **4:30 AM club member** (early morning study sessions)
+- ♟️ Chess enthusiast (strategy translates to trading!)
+- 🤖 Fascinated by LLMs transforming financial analysis
+- 📚 Currently reading: *Machine Learning for Algorithmic Trading* + *Hands-On LLMs*
+- 🎯 Obsessed with data-driven decision making
+- 💪 Proving it's never too late to reinvent yourself (career changer!)
 
 ---
 
-**💡 "From Financial Services Professional to LLM engineering - proving it's never too late to reinvent yourself."**
+## 📅 Journey Timeline
 
-⭐️ Star my repos if you find them useful!  
-🔔 Follow for daily updates on my journey!
+```
+November 2025:  Started 37-month journey (Week 1) ← YOU ARE HERE
+April 2026:     Data Analyst job secured (Month 5 target)
+February 2027:  Data Engineer position (Month 15)
+April 2028:     ML Engineer role (Month 29)
+December 2028:  LLM Engineer + AI Trading Assistant live (Month 37) 🎯
+```
 
-*Last updated: Week 1 of 160 (37 months)*
+**Progress:** 1 week in / 160 weeks total | 0.6% complete  
+**Commitment:** 25 hours/week | Sustainable marathon pace  
+**Status:** 🟢 Active, on track, building daily
+
+---
+
+## 🏆 Why Follow My Journey?
+
+### **For Recruiters:**
+- See real production code (not just tutorials)
+- Track consistent progress (commits don't lie)
+- Understand my thought process (documented)
+- Verify technical skills (public repos)
+- See long-term potential (clear growth path)
+
+### **For Fellow Learners:**
+- Learn from my mistakes and successes
+- See realistic timeline for career change
+- Get structured learning approach (activation plans)
+- Find accountability partner
+- Proof that self-taught works
+
+### **For Trading + Tech Enthusiasts:**
+- Follow AI trading system evolution
+- See finance + ML integration
+- Learn quantitative strategies
+- Discuss market analysis approaches
+
+---
+
+## 📌 Pinned Repositories
+
+**1. [data-portfolio](https://github.com/manuel-reyes-ml/data-portfolio)** - Project hub (production + learning)  
+**2. [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)** - Production ETL  
+**3. [trading_attention_tracker](https://github.com/manuel-reyes-ml/trading_attention_tracker)** - Learning capstone  
+**4. [learning_journey](https://github.com/manuel-reyes-ml/learning_journey)** - 37-month documentation
+
+---
+
+<div align="center">
+
+### 💡 **"From financial services to LLM engineering—proving systematic learning beats talent."**
+
+⭐️ **Star my repos** if you find them useful!  
+🔔 **Follow** for daily updates on the 37-month journey!  
+💬 **Reach out** if you want to collaborate or discuss trading + tech!
+
+---
+
+**Last Updated:** November 26, 2025 | Week 1 of 160  
+**Current Stage:** Stage 1 (Data Analyst) | 5% complete  
+**Status:** 🟢 Active • Learning in Public • Building Daily
+
+**[View Live Progress →](https://manuel-reyes-ml.github.io/learning_journey/)**
+
+</div>
