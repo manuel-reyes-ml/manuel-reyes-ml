@@ -16,12 +16,21 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 🏆 **Unique Value Proposition:**
 - ✅ **Production ETL system** deployed and running (95% time reduction, $15K/year savings)
 - ✅ **Public code** for review (smart data privacy with synthetic test data)
-- ✅ **10+ years finance expertise** (bookkeeping, financial reporting, retirement plans)
+- ✅ **15+ years data expertise** (manufacturing operations, bookkeeping, financial reporting, business operations)
+- ✅ **5+ years in financial services** (business operations, retirement plans, compliance, reconciliation)
 - ✅ **6+ years trading experience** (swing/day trading, technical analysis, quantitative strategies)
 - ✅ **Systematic learning path** (37-month roadmap from DA to Senior LLM Engineer)
 - ✅ **Building in public** (transparent progress, consistent commits)
 
-**The Combination:** Domain expertise (finance/trading) + Production experience + Technical skills + Clear growth trajectory
+**The Combination:** Domain expertise (data + finance + trading) + Production experience + Technical skills + Clear growth trajectory
+
+---
+
+## 💡 Why I'm Making This Change
+
+I've worked with data my entire professional career—manufacturing operations, bookkeeping, financial reporting, financial services, last 6 years actively trading. Through all of this, one truth became undeniable: **data-driven decisions consistently beat gut feeling**. I've watched companies make million-dollar mistakes ignoring their numbers, and traders succeed or fail based purely on their data analysis. The pattern was crystal clear.
+
+But I hit a ceiling: I could analyze data brilliantly and spot patterns, but **I couldn't build the automated systems to scale these insights**. I couldn't create the real-time pipelines, ML models, or AI assistants I envisioned. So I'm building them myself—Week 1 of a systematic 37-month journey from Data Analyst to Senior LLM Engineer. I'm doing it in public, sharing every step, because career transformation shouldn't be mysterious—it should inspire others to do the same.
 
 ---
 
@@ -59,7 +68,7 @@ Built automated Python ETL pipeline extracting, transforming, validating, and re
 **Why It's Public:**  
 Uses synthetic test data (Python `faker` module) demonstrating professional data governance—full code review possible while maintaining client privacy.
 
-**Tech Stack:** Python • pandas • openpyxl • Excel • data validation • faker
+**Tech Stack:** Python • pandas • openpyxl • Excel • matplotlib • data validation • faker
 
 [**→ View Code & Run Locally**](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
 
@@ -135,8 +144,9 @@ APIs & Web:    REST APIs, JSON/XML parsing, BeautifulSoup
 
 ### **Domain Expertise:**
 ```
-Finance:       10+ years bookkeeping, financial reporting, retirement plans
-Trading:       6+ years active trading, technical analysis, market structure
+Data:          10+ years working with data across multiple contexts
+Finance:       8 years financial services, retirement plans, compliance
+Trading:       6 years active trading, technical analysis, market structure
 Business:      Process automation, ROI analysis, ETL pipelines
 ```
 
@@ -198,7 +208,7 @@ Production:        Docker, Kubernetes, CI/CD, monitoring, scalability
 
 ---
 
-## 💡 My Philosophy
+## 💭 My Philosophy
 
 ### **Why I'm Different:**
 
@@ -218,7 +228,7 @@ Production:        Docker, Kubernetes, CI/CD, monitoring, scalability
 ✓ Multiple certifications (in progress)
 ✓ Advanced Python/SQL proficiency
 ✓ Production ETL system (live, public code)
-✓ 10+ years finance + 6+ years trading expertise
+✓ 10+ years data + 8 years finance + 6 years trading
 ✓ Real business impact (95% efficiency, $15K savings)
 ✓ Clear growth trajectory (37-month plan)
 ✓ Building in public (accountability + transparency)
@@ -226,7 +236,7 @@ Production:        Docker, Kubernetes, CI/CD, monitoring, scalability
 
 ### **The Value Proposition:**
 
-> "I'm not just learning Python from tutorials. I've deployed a production system saving my company 20 hours/month. I understand finance deeply, think quantitatively about markets, and I'm systematically building toward advanced AI/ML skills. **The code is public, the impact is measurable, and the trajectory is clear.**"
+> "I'm not just learning Python from tutorials. I've deployed a production system saving my company 20 hours/month. I understand data deeply, think quantitatively about markets, and I'm systematically building toward advanced AI/ML skills. **The code is public, the impact is measurable, and the trajectory is clear.**"
 
 ### **Building in Public:**
 - **Transparency:** Real learning is messy—showing actual process, not just results
@@ -291,9 +301,9 @@ Building toward a production-grade LLM-powered trading system that:
 - 📊 Learns and adapts continuously (reinforcement learning)
 
 **Why This Matters:**
-- Combines deep finance domain knowledge with cutting-edge AI
-- Solves real problem (trading analysis is time-consuming)
-- Rare skill set in market (finance + ML + LLM engineering)
+- Combines deep data + finance domain knowledge with cutting-edge AI
+- Solves real problem (trading analysis is time-consuming and emotional)
+- Rare skill set in market (data + finance + ML + LLM engineering)
 - Foundation for consulting/startup opportunities
 - Demonstrates end-to-end capability (data → ML → LLM → production)
 
@@ -313,19 +323,20 @@ Building toward a production-grade LLM-powered trading system that:
 [![Portfolio](https://img.shields.io/badge/-Portfolio-667eea?style=for-the-badge&logo=github&logoColor=white)](https://github.com/manuel-reyes-ml/data-portfolio)
 
 ### **I'm Open To:**
-- 💼 **Data Analyst opportunities** (remote, finance/trading sector preferred)
+- 💼 **Data Analyst opportunities** (remote, business operations or finance/trading sectors preferred)
 - 🤝 **Networking** with data professionals and traders
 - 📊 **Collaborations** on trading + tech projects
 - 💡 **Code reviews** and technical discussions
 - 🎓 **Mentorship** (giving or receiving)
-- 🎤 **Speaking** about career transitions
+- 🎤 **Speaking** about career transitions and data-driven decisions
 
 ### **Let's Connect If:**
-- You're hiring Data Analysts with finance domain expertise
-- You're building trading systems with modern tech
+- You're hiring Data Analysts with business operations or finance domain expertise
+- You're building data-driven trading systems
 - You're on a similar career transition journey
-- You want to discuss finance + AI intersection
+- You want to discuss data + AI + finance intersection
 - You value production code over tutorial completions
+- You believe in data-driven decision making
 
 ---
 
@@ -334,7 +345,7 @@ Building toward a production-grade LLM-powered trading system that:
 - 📈 Active trader for 6+ years (swing & day trading strategies)
 - 🌅 **4:30 AM club member** (early morning study sessions)
 - ♟️ Chess enthusiast (strategy translates to trading!)
-- 🤖 Fascinated by LLMs transforming financial analysis
+- 🤖 Fascinated by LLMs transforming data/financial analysis
 - 📚 Currently reading: *Machine Learning for Algorithmic Trading* + *Hands-On LLMs*
 - 🎯 Obsessed with data-driven decision making
 - 💪 Proving it's never too late to reinvent yourself (career changer!)
@@ -375,7 +386,7 @@ December 2028:  LLM Engineer + AI Trading Assistant live (Month 37) 🎯
 
 ### **For Trading + Tech Enthusiasts:**
 - Follow AI trading system evolution
-- See finance + ML integration
+- See data + finance + ML integration
 - Learn quantitative strategies
 - Discuss market analysis approaches
 
@@ -392,16 +403,16 @@ December 2028:  LLM Engineer + AI Trading Assistant live (Month 37) 🎯
 
 <div align="center">
 
-### 💡 **"From financial services to LLM engineering—proving systematic learning beats talent."**
+### 💡 **"From data analysis to LLM engineering—proving systematic learning beats talent."**
 
 ⭐️ **Star my repos** if you find them useful!  
 🔔 **Follow** for daily updates on the 37-month journey!  
-💬 **Reach out** if you want to collaborate or discuss trading + tech!
+💬 **Reach out** if you want to collaborate or discuss data + trading + tech!
 
 ---
 
 **Last Updated:** November 26, 2025 | Week 1 of 160  
-**Current Stage:** Stage 1 (Data Analyst) | 5% complete  
+**Current Stage:** Stage 1 (Data Analyst) | 0.6% complete  
 **Status:** 🟢 Active • Learning in Public • Building Daily
 
 **[View Live Progress →](https://manuel-reyes-ml.github.io/learning_journey/)**
