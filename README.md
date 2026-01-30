@@ -253,13 +253,13 @@ Certification: AWS Certified Data Engineer Associate
 
 ### 📈 Stats & Contributions
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=manuel-reyes-ml&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![GitHub Stats](https://github-readme-stats-theta-three-33.vercel.app/api?username=manuel-reyes-ml&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manuel-reyes-ml&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=manuel-reyes-ml&theme=tokyonight&hide_border=true)
 
 ### 💻 Most Used Languages
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+![Top Languages](https://github-readme-stats-theta-three-33.vercel.app/api/top-langs/?username=manuel-reyes-ml&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
 
 </div>
 
