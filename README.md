@@ -41,9 +41,11 @@ Automated Python ETL pipeline for retirement plan distribution reconciliation at
 
 **Tech:** Python • pandas • openpyxl • matplotlib • data validation • pytest • Github Actions CI • faker (synthetic data)
 
+**[→ View Full Documentation & Code](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)**
+
 ---
 
-## 📈 Current Stage 1 Projects
+## 📈 Current Projects
 
 ### 📊 [Operations-Demand-Intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence)
 **AI-Powered Workflow Demand Analysis** | 🚧 In Development
@@ -58,6 +60,8 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | 🔒 Data Privacy | PII handling, synthetic data for GitHub |
 
 **Tech:** Python • pandas • Streamlit • PandasAI • Plotly • GitHub Actions CI
+
+**[→ View Project](https://github.com/manuel-reyes-ml/operations-demand-intelligence)**
 
 ---
 
@@ -117,10 +121,10 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 
 | Type | Repository | Description |
 |------|------------|-------------|
-| 🏭 **Production** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | Live ETL system ($15K/year savings) |
-| 📊 **Stage 1** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | AI-powered workflow analysis |
-| 📈 **Flagship** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | AI-powered predictive trigger system |
-| 📖 **Learning** | [learning_journey](https://github.com/manuel-reyes-ml/learning_journey) | Public documentation |
+| 🏭 **Production System** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | Live ETL system ($15K/year savings) |
+| 📊 **Active Projects** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | AI-powered workflow analysis |
+| 📈 **Flagship Project** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | AI-powered predictive trigger system |
+| 📖 **Learning Journey** | [learning_journey](https://github.com/manuel-reyes-ml/learning_journey) | Public documentation |
 
 📚 [Data Portfolio Hub](https://github.com/manuel-reyes-ml/data-portfolio)
 Central repository linking all projects with business context, technical details, and impact metrics.
@@ -138,7 +142,7 @@ Central repository linking all projects with business context, technical details
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash/CLI-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-**Local Data**
+**Data Analysis & Processing**
 
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
@@ -148,7 +152,7 @@ Central repository linking all projects with business context, technical details
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 ![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=flat-square&logo=googlesheets&logoColor=white)
 
-**Network Data**
+**Data Collection**
 
 ![requests](https://img.shields.io/badge/requests-3776AB?style=flat-square&logo=python&logoColor=white)
 ![httpx](https://img.shields.io/badge/httpx-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -165,10 +169,12 @@ Central repository linking all projects with business context, technical details
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
 
-**Testing**
+**Testing & CI/CD**
 
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![unittest](https://img.shields.io/badge/unittest.mock-3776AB?style=flat-square&logo=python&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI/CD-4285F4?style=flat-square&logoColor=white)
 
 **AI Tools**
 
@@ -176,13 +182,12 @@ Central repository linking all projects with business context, technical details
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
 
-**APIs & Production**
+**APIs & Domain Expertise**
 
 ![edgartools](https://img.shields.io/badge/edgartools_(SEC)-002868?style=flat-square&logoColor=white)
 ![yfinance](https://img.shields.io/badge/yfinance-7B1FA2?style=flat-square&logoColor=white)
 ![Wikipedia API](https://img.shields.io/badge/Wikipedia_API-000000?style=flat-square&logo=wikipedia&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI/CD-4285F4?style=flat-square&logoColor=white)
+
 
 **Domain Expertise:** 15+ years business data • 4 years financial services • 6 years active trading
 
