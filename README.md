@@ -1,8 +1,8 @@
 # Hi, I'm Manuel 👋
 
-![AI-Powered](https://img.shields.io/badge/🤖_AI--Powered-Data_Analyst-blueviolet?style=for-the-badge)
+![GenAI-First](https://img.shields.io/badge/🤖_GenAI--First-Data_Analyst_&_AI_Engineer-blueviolet?style=for-the-badge)
 
-**Automating Business Operations with Python + AI** | Building production systems with measurable business impact
+**Building Production AI Systems with Python + GenAI** | Measurable business impact from Day 1
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
@@ -21,7 +21,7 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | ❌ No domain expertise | ✅ **15+ years business data experience** |
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
 | 📦 Scattered portfolios | ✅ **Public code** with synthetic data (privacy-conscious) |
-| 🤖 No AI integration | ✅ **AI-powered tools** (PandasAI, ChatGPT workflows, Cursor IDE) |
+| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs: Gemini/OpenAI/Claude, LangChain, Streamlit, PandasAI, Cursor IDE) |
 
 ---
 
@@ -55,11 +55,11 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | Feature | Implementation |
 |---------|----------------|
 | 🔍 Demand Analysis | Volume patterns, Distribution vs Loan segmentation |
-| 🤖 AI Integration | PandasAI chat with guardrails + code transparency |
+| 🤖 AI Integration | LLM SDK integration + PandasAI chat with guardrails + code transparency |
 | 📊 Dashboard | Streamlit with interactive visualizations |
 | 🔒 Data Privacy | PII handling, synthetic data for GitHub |
 
-**Tech:** Python • pandas • Streamlit • PandasAI • Plotly • GitHub Actions CI
+**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Plotly • GitHub Actions CI
 
 **[→ View Project](https://github.com/manuel-reyes-ml/operations-demand-intelligence)**
 
@@ -95,7 +95,7 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 <br>
 
 - 📅 Streamlit multi-page app (6 pages)
-- 📅 PandasAI chat interface with SQL transparency
+- 📅 LLM SDK chat interface + PandasAI with SQL transparency
 - 📅 AI guardrails (read-only, cost controls, disclaimers)
 - 📅 Interactive trigger leaderboard & signal explorer
 - 📅 Deployment on Streamlit Cloud
@@ -109,9 +109,9 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | **Methodology** | Walk-forward validation, de-clustering, transaction costs |
 | **Bias Controls** | Historical universe snapshots, corporate actions handling |
 | **Modern Stack** | DuckDB + Parquet lakehouse, httpx async collectors |
-| **AI Features** | PandasAI with guardrails, SQL transparency |
+| **AI Features** | LLM SDK (provider-agnostic) + PandasAI with guardrails, SQL transparency |
 
-**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • PandasAI • Streamlit • GitHub Actions CI
+**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • Gemini SDK • PandasAI • Streamlit • GitHub Actions CI
 
 [**→ View Project**](https://github.com/manuel-reyes-ml/attention-flow-catalyst)
 
@@ -176,8 +176,12 @@ Central repository linking all projects with business context, technical details
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-4285F4?style=flat-square&logoColor=white)
 
-**AI Tools**
+**AI & GenAI Tools**
 
+![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
+![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Claude SDK](https://img.shields.io/badge/Claude_SDK-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
@@ -195,14 +199,14 @@ Central repository linking all projects with business context, technical details
 
 ## 🔮 Stage 2 Technical Skills (Coming Next)
 
-*Planned skills for AI-Powered Data Engineer role (Months 6-15):*
+*Planned skills for GenAI Data Engineer + AI Systems Architect role (Months 6-15):*
 
 ```
 Cloud:         AWS (S3, Redshift, Lambda, Glue), Docker
 Orchestration: Apache Airflow, dbt (data build tool)
 Big Data:      PySpark, distributed computing
-Databases:     PostgreSQL, data warehousing
-AI Enhanced:   LangChain basics, AI-enhanced pipelines
+Databases:     PostgreSQL, Vector DBs (Pinecone/Weaviate/Qdrant)
+AI Systems:    RAG infrastructure, embedding pipelines, unstructured data ETL
 Certification: AWS Certified Data Engineer Associate
 ```
 
@@ -219,9 +223,13 @@ Certification: AWS Certified Data Engineer Associate
 - 🚧 **IBM Data Analyst Professional Certificate** (11 courses)
 - 📅 **Statistics with Python Specialization** (University of Michigan)
 
-#### 🤖 AI-Powered Analyst Courses
+#### 🤖 GenAI Engineering Courses
+- 🚧 **LLM SDK Engineering** — Provider-agnostic architecture (Gemini, OpenAI, Claude)
+- 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — RAG, LangChain, fine-tuning (LoRA/QLoRA), deployment
 - 🚧 **Generative AI Data Analyst Specialization** (Vanderbilt) — ChatGPT+SQL workflows, CLUE/TRUST/CAPTURE frameworks
 - 🚧 **ChatGPT Prompt Engineering for Developers** (DeepLearning.AI) — API basics, prompt design, few-shot learning
+- 🚧 **AI Python for Beginners** (DeepLearning.AI) — Andrew Ng's AI-first Python foundation
+- 📅 **30 Days of Streamlit Challenge** — Build AI UIs fast
 
 #### AI Development Tools
 - ⚡ **Cursor AI IDE** — Primary editor with Composer mode
@@ -229,11 +237,12 @@ Certification: AWS Certified Data Engineer Associate
 - ⚡ **VS Code** — Jupyter notebooks & data exploration
 
 ### **Planned by Stage:**
-| Stage | Certifications |
-|-------|----------------|
-| **Stage 2** | AWS Certified Data Engineer, Solutions Architect Associate |
-| **Stage 3** | TensorFlow Developer Certificate, Deep Learning Specialization |
-| **Stage 4** | Advanced LLM Engineering, RAG Systems, Agentic AI (LangGraph, CrewAI, MCP) |
+| Stage | Certifications & Focus |
+|-------|------------------------|
+| **Stage 2** | AWS Certified Data Engineer, Vector DBs (Pinecone/Weaviate), RAG Infrastructure |
+| **Stage 3** | Deep Learning Specialization, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama |
+| **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, Multi-Agent Systems |
+| **Stage 5** | Automated Testing for LLMOps, System Design, Production AI Evaluation |
 
 ---
 
@@ -276,10 +285,10 @@ Certification: AWS Certified Data Engineer Associate
 
 | Stage | Duration | Role | Status |
 |-------|----------|------|--------|
-| **1** | Months 1-5 | **AI-Powered Data Analyst** | 🟢 **ACTIVE** |
-| **2** | Months 6-15 | AI-Powered Data Engineer | ⚪ Planned |
-| **3** | Months 16-29 | ML Engineer | ⚪ Planned |
-| **4** | Months 30-34 | LLM & Agentic AI Specialist | ⚪ Planned |
+| **1** | Months 1-5 | **GenAI-First Data Analyst & AI Engineer** | 🟢 **ACTIVE** |
+| **2** | Months 6-15 | GenAI Data Engineer + AI Systems Architect | ⚪ Planned |
+| **3** | Months 16-29 | ML Engineer + Local LLM Specialist | ⚪ Planned |
+| **4** | Months 30-34 | Agentic AI Engineer & LLM Specialist | ⚪ Planned |
 | **5** | Months 35-37 | Senior LLM Engineer | 🎯 Goal |
 
 **[→ View Interactive Roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
@@ -307,20 +316,20 @@ But I hit a ceiling: I could analyze data brilliantly, but couldn't build automa
 ## 🌐 Let's Connect
 
 **I'm Open To:**
-- 💼 **Data Analyst Opportunities** (Remote preferred)
+- 💼 **Data Analyst & AI Engineer Opportunities** (Remote preferred)
 - 🤝 **Code reviews and technical discussions**
 - 🎓 **Knowledge exchange** on data + AI + finance
 
 **Let's Connect If You:**
 - Value production code over tutorial completions
 - Are hiring Data Analysts with proven delivery capability
-- Are building data-driven systems
+- Are building data-driven AI systems
 
 ---
 
 <div align="center">
 
-**Current Stage:** Stage 1 (AI-Powered Data Analyst) | 🟢 Active • Building in Public
+**Current Stage:** Stage 1 (GenAI-First Data Analyst & AI Engineer) | 🟢 Active • Building in Public
 
 ⭐️ **Star repos** if you find them useful! | 🔔 **Follow** for updates on the 37-month journey!
 
