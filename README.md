@@ -20,8 +20,8 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | 🎓 Tutorial projects | ✅ **Production ETL system** (live, saving **$15K/year**) |
 | ❌ No domain expertise | ✅ **15+ years business data experience** |
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
-| 📦 Scattered portfolios | ✅ **Public code** with synthetic data (privacy-conscious) |
-| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs: Gemini/OpenAI/Claude, LangChain, Streamlit, PandasAI, Cursor IDE) |
+| 📦 Scattered portfolios | ✅ **7 production-grade projects** with synthetic data (privacy-conscious) |
+| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs, RAG, Multimodal AI, Pydantic structured outputs) |
 
 ---
 
@@ -39,15 +39,65 @@ Automated Python ETL pipeline for retirement plan distribution reconciliation at
 | 📊 Scalability | **10x capacity** (300+ accounts vs 30 manual) |
 | ✅ Accuracy | **Zero errors** since deployment |
 
-**Tech:** Python • pandas • openpyxl • matplotlib • data validation • pytest • Github Actions CI • faker (synthetic data)
+**Tech:** Python • pandas • openpyxl • matplotlib • data validation • pytest • GitHub Actions CI • faker (synthetic data)
 
 **[→ View Full Documentation & Code](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)**
 
 ---
 
-## 📈 Current Projects
+## 📈 Project Pipeline — Skills Progression (Easy → Flagship)
 
-### 📊 [Operations-Demand-Intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence)
+> Each project introduces new skills that build on the previous — from pure Python ETL to multimodal AI, RAG, and statistical research systems.
+
+### 🔐 DataVault Analyst — *First AI Project*
+**AI-Powered PII-Safe Data Intelligence** | "Chat With Your Data"
+
+Natural language analytics for retirement plan operations with PII protection and AI guardrails.
+
+| Feature | Implementation |
+|---------|----------------|
+| 🤖 AI Chat | LLM SDK (provider-agnostic) + PandasAI with code transparency |
+| 🔒 PII Protection | Governance-as-code: PII leak prevention in AI responses |
+| 📊 Hybrid Analytics | Pre-built dashboards + AI chat (works even without API key) |
+| 🧩 Structured Outputs | Pydantic-validated AI responses |
+
+**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Pydantic • GitHub Actions CI
+
+---
+
+### 📋 PolicyPulse — *RAG Foundation*
+**AI-Powered HR Policy Chatbot** | "Ask Your Policies"
+
+RAG chatbot that answers employee policy questions with cited sources and auto-escalates to HR when uncertain.
+
+| Feature | Implementation |
+|---------|----------------|
+| 🔍 Semantic Search | Embeddings + ChromaDB vector store + similarity scoring |
+| 📎 Cited Answers | Every response cites specific policy section & document |
+| 🎫 Smart Escalation | Confidence < 0.7 → auto-generate HR ticket with context |
+| 🧠 RAG Pipeline | Document → Chunk → Embed → Retrieve → Generate |
+
+**Tech:** Python • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • GitHub Actions CI
+
+---
+
+### 📄 FormSense — *Document Intelligence*
+**AI-Powered Distribution Form Validator** | "From Paper to Processing"
+
+Multimodal AI system that reads retirement plan distribution forms (handwritten checkboxes, signatures), validates against business rules, and routes results.
+
+| Feature | Implementation |
+|---------|----------------|
+| 👁️ Vision AI | Gemini Vision reads checkboxes, handwriting, printed text |
+| ✅ Validation | Business rule engine for ERISA-regulated distribution processing |
+| 📧 Smart Routing | Complete → operations ticket | Incomplete → email to advisor |
+| 📊 Confidence | Field-level extraction confidence scoring |
+
+**Tech:** Python • Gemini Vision SDK • Streamlit • Pydantic • GitHub Actions CI
+
+---
+
+### 📊 [Operations-Demand-Intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) — *Enterprise Analytics*
 **AI-Powered Workflow Demand Analysis** | 🚧 In Development
 
 Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decisions with AI-powered natural language queries.
@@ -55,7 +105,7 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | Feature | Implementation |
 |---------|----------------|
 | 🔍 Demand Analysis | Volume patterns, Distribution vs Loan segmentation |
-| 🤖 AI Integration | LLM SDK integration + PandasAI chat with guardrails + code transparency |
+| 🤖 AI Integration | LLM SDK + PandasAI chat with guardrails + code transparency |
 | 📊 Dashboard | Streamlit with interactive visualizations |
 | 🔒 Data Privacy | PII handling, synthetic data for GitHub |
 
@@ -65,7 +115,23 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 
 ---
 
-### 📈 [Attention-Flow Catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst)
+### 📺 StreamSmart Optimizer — *Consumer AI App*
+**AI-Powered Streaming Subscription Rotation Advisor** | "Spend Less, Watch More"
+
+Consumer-facing dashboard that optimizes streaming subscriptions through AI-driven rotation scheduling, cost-per-view analytics, and content search.
+
+| Feature | Implementation |
+|---------|----------------|
+| 📺 Content Search | Watchmode + TMDB API integration ("Where can I watch X?") |
+| 🤖 AI Rotation Planner | LLM analyzes habits + content calendar → optimal schedule |
+| 💰 Savings Engine | Cost-per-view analytics + annual savings projections |
+| 🛡️ Guardrails | Price validation, financial disclaimers, scope limits |
+
+**Tech:** Python • httpx async • Watchmode/TMDB APIs • Streamlit • Gemini SDK • Pydantic • GitHub Actions CI
+
+---
+
+### 📈 [Attention-Flow Catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) — 🚀 Flagship
 **AI-Powered Predictive Trigger Analysis for Small-Cap Stocks** | 🚧 Phase 1A Active
 
 > **Research Question:** Which trigger or combination best predicts +10% price moves within 3 trading days?
@@ -122,7 +188,11 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | Type | Repository | Description |
 |------|------------|-------------|
 | 🏭 **Production System** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | Live ETL system ($15K/year savings) |
-| 📊 **Active Projects** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | AI-powered workflow analysis |
+| 🔐 **First AI Project** | [datavault-analyst](https://github.com/manuel-reyes-ml/datavault-analyst) | PII-safe natural language data analytics |
+| 📋 **RAG Foundation** | [policypulse](https://github.com/manuel-reyes-ml/policypulse) | HR policy chatbot with citations & escalation |
+| 📄 **Document AI** | [formsense](https://github.com/manuel-reyes-ml/formsense) | Multimodal form extraction & validation |
+| 📊 **Enterprise Analytics** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | AI-powered workflow demand analysis |
+| 📺 **Consumer AI** | [streamsmart-optimizer](https://github.com/manuel-reyes-ml/streamsmart-optimizer) | Streaming subscription rotation advisor |
 | 📈 **Flagship Project** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | AI-powered predictive trigger system |
 | 📖 **Learning Journey** | [learning_journey](https://github.com/manuel-reyes-ml/learning_journey) | Public documentation |
 
@@ -183,6 +253,8 @@ Central repository linking all projects with business context, technical details
 ![Claude SDK](https://img.shields.io/badge/Claude_SDK-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
 
