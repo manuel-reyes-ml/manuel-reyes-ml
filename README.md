@@ -7,7 +7,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Projects-667eea)](https://github.com/manuel-reyes-ml/data-portfolio)
-[![Roadmap](https://img.shields.io/badge/Roadmap-View-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
+[![Roadmap](https://img.shields.io/badge/Roadmap-v8.2-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
 
 ---
 
@@ -22,6 +22,7 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
 | 📦 Scattered portfolios | ✅ **7 production-grade projects** with synthetic data (privacy-conscious) |
 | 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs, RAG, Multimodal AI, Pydantic structured outputs) |
+| 📉 No AI evaluation | ✅ **Evaluation-driven development** (DeepEval + pytest, RAGAS, Docker in every project) |
 
 ---
 
@@ -48,6 +49,8 @@ Automated Python ETL pipeline for retirement plan distribution reconciliation at
 ## 📈 Project Pipeline — Skills Progression (Easy → Flagship)
 
 > Each project introduces new skills that build on the previous — from pure Python ETL to multimodal AI, RAG, and statistical research systems.
+>
+> 🏗️ **Production Standard:** Every project ships with architecture diagram (Mermaid), Dockerfile, evaluation metrics table, demo GIF, and "What I Learned" section.
 
 ### 🔐 DataVault Analyst — *First AI Project*
 **AI-Powered PII-Safe Data Intelligence** | "Chat With Your Data"
@@ -61,7 +64,7 @@ Natural language analytics for retirement plan operations with PII protection an
 | 📊 Hybrid Analytics | Pre-built dashboards + AI chat (works even without API key) |
 | 🧩 Structured Outputs | Pydantic-validated AI responses |
 
-**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Pydantic • GitHub Actions CI
+**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Pydantic • DeepEval • Docker • GitHub Actions CI
 
 ---
 
@@ -77,7 +80,7 @@ RAG chatbot that answers employee policy questions with cited sources and auto-e
 | 🎫 Smart Escalation | Confidence < 0.7 → auto-generate HR ticket with context |
 | 🧠 RAG Pipeline | Document → Chunk → Embed → Retrieve → Generate |
 
-**Tech:** Python • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • GitHub Actions CI
+**Tech:** Python • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • DeepEval • RAGAS • Docker • GitHub Actions CI
 
 ---
 
@@ -93,7 +96,7 @@ Multimodal AI system that reads retirement plan distribution forms (handwritten 
 | 📧 Smart Routing | Complete → operations ticket | Incomplete → email to advisor |
 | 📊 Confidence | Field-level extraction confidence scoring |
 
-**Tech:** Python • Gemini Vision SDK • Streamlit • Pydantic • GitHub Actions CI
+**Tech:** Python • Gemini Vision SDK • Streamlit • Pydantic • DeepEval • Docker • GitHub Actions CI
 
 ---
 
@@ -109,7 +112,7 @@ Analyzing 8+ months of OnBase workflow data to enable data-driven staffing decis
 | 📊 Dashboard | Streamlit with interactive visualizations |
 | 🔒 Data Privacy | PII handling, synthetic data for GitHub |
 
-**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Plotly • GitHub Actions CI
+**Tech:** Python • pandas • Streamlit • Gemini SDK • PandasAI • Plotly • DeepEval • Docker • GitHub Actions CI
 
 **[→ View Project](https://github.com/manuel-reyes-ml/operations-demand-intelligence)**
 
@@ -127,7 +130,7 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | 💰 Savings Engine | Cost-per-view analytics + annual savings projections |
 | 🛡️ Guardrails | Price validation, financial disclaimers, scope limits |
 
-**Tech:** Python • httpx async • Watchmode/TMDB APIs • Streamlit • Gemini SDK • Pydantic • GitHub Actions CI
+**Tech:** Python • httpx async • Watchmode/TMDB APIs • Streamlit • Gemini SDK • Pydantic • DeepEval • LangSmith • Docker • GitHub Actions CI
 
 ---
 
@@ -176,8 +179,9 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | **Bias Controls** | Historical universe snapshots, corporate actions handling |
 | **Modern Stack** | DuckDB + Parquet lakehouse, httpx async collectors |
 | **AI Features** | LLM SDK (provider-agnostic) + PandasAI with guardrails, SQL transparency |
+| **AI Evaluation** | DeepEval + pytest, elevated faithfulness thresholds (0.9), CI/CD integrated |
 
-**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • Gemini SDK • PandasAI • Streamlit • GitHub Actions CI
+**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • Gemini SDK • PandasAI • Streamlit • DeepEval • Docker • GitHub Actions CI
 
 [**→ View Project**](https://github.com/manuel-reyes-ml/attention-flow-catalyst)
 
@@ -246,6 +250,10 @@ Central repository linking all projects with business context, technical details
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-4285F4?style=flat-square&logoColor=white)
 
+**Containerization**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
 **AI & GenAI Tools**
 
 ![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
@@ -257,6 +265,12 @@ Central repository linking all projects with business context, technical details
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
+
+**AI Evaluation Frameworks**
+
+![DeepEval](https://img.shields.io/badge/DeepEval-FF6B6B?style=flat-square&logoColor=white)
+![RAGAS](https://img.shields.io/badge/RAGAS-4CAF50?style=flat-square&logoColor=white)
+![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat-square&logoColor=white)
 
 **APIs & Domain Expertise**
 
@@ -274,7 +288,8 @@ Central repository linking all projects with business context, technical details
 *Planned skills for GenAI Data Engineer + AI Systems Architect role (Months 6-15):*
 
 ```
-Cloud:         AWS (S3, Redshift, Lambda, Glue), Docker
+Cloud:         AWS (S3, Redshift, Lambda, Glue), BigQuery
+Containers:    Docker & Kubernetes Masterclass
 Orchestration: Apache Airflow, dbt (data build tool)
 Big Data:      PySpark, distributed computing
 Databases:     PostgreSQL, Vector DBs (Pinecone/Weaviate/Qdrant)
@@ -297,11 +312,15 @@ Certification: AWS Certified Data Engineer Associate
 
 #### 🤖 GenAI Engineering Courses
 - 🚧 **LLM SDK Engineering** — Provider-agnostic architecture (Gemini, OpenAI, Claude)
-- 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — RAG, LangChain, fine-tuning (LoRA/QLoRA), deployment
+- 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — RAG, LangChain, fine-tuning (LoRA/QLoRA), deployment *(Stage 1 primary)*
 - 🚧 **Generative AI Data Analyst Specialization** (Vanderbilt) — ChatGPT+SQL workflows, CLUE/TRUST/CAPTURE frameworks
 - 🚧 **ChatGPT Prompt Engineering for Developers** (DeepLearning.AI) — API basics, prompt design, few-shot learning
 - 🚧 **AI Python for Beginners** (DeepLearning.AI) — Andrew Ng's AI-first Python foundation
 - 📅 **30 Days of Streamlit Challenge** — Build AI UIs fast
+
+#### 🧪 Evaluation & Containerization (v8.2)
+- 📅 **Building & Evaluating Advanced RAG** (DeepLearning.AI) — RAG Triad metrics, evaluation-driven development
+- 📅 **Docker for Beginners with Hands-on Labs** (KodeKloud/Coursera) — Dockerfile, Docker Compose, containerization
 
 #### AI Development Tools
 - ⚡ **Cursor AI IDE** — Primary editor with Composer mode
@@ -311,8 +330,8 @@ Certification: AWS Certified Data Engineer Associate
 ### **Planned by Stage:**
 | Stage | Certifications & Focus |
 |-------|------------------------|
-| **Stage 2** | AWS Certified Data Engineer, Vector DBs (Pinecone/Weaviate), RAG Infrastructure |
-| **Stage 3** | Deep Learning Specialization, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama |
+| **Stage 2** | AWS Certified Data Engineer, Docker & Kubernetes Masterclass, BigQuery, Vector DBs (Pinecone/Weaviate), RAG Infrastructure |
+| **Stage 3** | Deep Learning Specialization, NVIDIA DLI, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama |
 | **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, Multi-Agent Systems |
 | **Stage 5** | Automated Testing for LLMOps, System Design, Production AI Evaluation |
 
