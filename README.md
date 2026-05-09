@@ -7,7 +7,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Projects-667eea)](https://github.com/manuel-reyes-ml/data-portfolio)
-[![Roadmap](https://img.shields.io/badge/Roadmap-v8.2-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
+[![Roadmap](https://img.shields.io/badge/Roadmap-v8.3-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
 
 ---
 
@@ -21,8 +21,8 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | ❌ No domain expertise | ✅ **15+ years business data experience** |
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
 | 📦 Scattered portfolios | ✅ **7 production-grade projects** with synthetic data (privacy-conscious) |
-| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs, RAG, Multimodal AI, Pydantic structured outputs) |
-| 📉 No AI evaluation | ✅ **Evaluation-driven development** (DeepEval + pytest, RAGAS, Docker in every project) |
+| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs with **Anthropic primary**, RAG, **FastMCP server**, Multimodal AI, Pydantic structured outputs) |
+| 📉 No AI evaluation | ✅ **Evaluation-driven development** (DeepEval + pytest, RAGAS, SelfCheckGPT, Docker in every project) |
 
 ---
 
@@ -69,7 +69,7 @@ Natural language analytics for retirement plan operations with PII protection an
 ---
 
 ### 📋 PolicyPulse — *RAG Foundation*
-**AI-Powered HR Policy Chatbot** | "Ask Your Policies"
+**AI-Powered HR Policy Chatbot** | "Ask Your Policies" | 🔌 **Exposes FastMCP server**
 
 RAG chatbot that answers employee policy questions with cited sources and auto-escalates to HR when uncertain.
 
@@ -79,8 +79,9 @@ RAG chatbot that answers employee policy questions with cited sources and auto-e
 | 📎 Cited Answers | Every response cites specific policy section & document |
 | 🎫 Smart Escalation | Confidence < 0.7 → auto-generate HR ticket with context |
 | 🧠 RAG Pipeline | Document → Chunk → Embed → Retrieve → Generate |
+| 🔌 MCP Server | FastMCP exposes retrieval as MCP tools — Cursor/Claude Desktop integration |
 
-**Tech:** Python • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • DeepEval • RAGAS • Docker • GitHub Actions CI
+**Tech:** Python • **Anthropic SDK (primary, Gemini fallback)** • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • DeepEval • RAGAS • SelfCheckGPT • **FastMCP** • Docker • GitHub Actions CI
 
 ---
 
@@ -181,7 +182,7 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | **AI Features** | LLM SDK (provider-agnostic) + PandasAI with guardrails, SQL transparency |
 | **AI Evaluation** | DeepEval + pytest, elevated faithfulness thresholds (0.9), CI/CD integrated |
 
-**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • Gemini SDK • PandasAI • Streamlit • DeepEval • Docker • GitHub Actions CI
+**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • **Anthropic SDK (primary, Gemini/OpenAI fallback)** • PandasAI • Streamlit • DeepEval • SelfCheckGPT + FActScore • Docker • GitHub Actions CI
 
 [**→ View Project**](https://github.com/manuel-reyes-ml/attention-flow-catalyst)
 
@@ -256,9 +257,10 @@ Central repository linking all projects with business context, technical details
 
 **AI & GenAI Tools**
 
+![Anthropic SDK](https://img.shields.io/badge/Anthropic_SDK_(primary)-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
-![Claude SDK](https://img.shields.io/badge/Claude_SDK-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![FastMCP](https://img.shields.io/badge/FastMCP-7C3AED?style=flat-square&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
@@ -270,6 +272,7 @@ Central repository linking all projects with business context, technical details
 
 ![DeepEval](https://img.shields.io/badge/DeepEval-FF6B6B?style=flat-square&logoColor=white)
 ![RAGAS](https://img.shields.io/badge/RAGAS-4CAF50?style=flat-square&logoColor=white)
+![SelfCheckGPT](https://img.shields.io/badge/SelfCheckGPT-FF9800?style=flat-square&logoColor=white)
 ![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat-square&logoColor=white)
 
 **APIs & Domain Expertise**
