@@ -20,8 +20,8 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | 🎓 Tutorial projects | ✅ **Production ETL system** (live, saving **$15K/year**) |
 | ❌ No domain expertise | ✅ **15+ years business data experience** |
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
-| 📦 Scattered portfolios | ✅ **7 production-grade projects** with synthetic data (privacy-conscious) |
-| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs with **Anthropic primary**, RAG, **FastMCP server**, Multimodal AI, Pydantic structured outputs) |
+| 📦 Scattered portfolios | ✅ **8 production-grade projects** with skills progression (incl. **two flagships**: AFC + Crucible) |
+| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs with **Anthropic primary** + **local-first Qwen3/Ollama**, RAG, **FastMCP server**, Multimodal AI, Pydantic structured outputs) |
 | 📉 No AI evaluation | ✅ **Evaluation-driven development** (DeepEval + pytest, RAGAS, SelfCheckGPT, Docker in every project) |
 
 ---
@@ -46,11 +46,13 @@ Automated Python ETL pipeline for retirement plan distribution reconciliation at
 
 ---
 
-## 📈 Project Pipeline — Skills Progression (Easy → Flagship)
+## 📈 Project Pipeline — Skills Progression (Easy → Two Flagships)
 
-> Each project introduces new skills that build on the previous — from pure Python ETL to multimodal AI, RAG, and statistical research systems.
+> Each project introduces new skills that build on the previous — from pure Python ETL to multimodal AI, RAG, statistical research systems, and an autonomous trading platform.
 >
 > 🏗️ **Production Standard:** Every project ships with architecture diagram (Mermaid), Dockerfile, evaluation metrics table, demo GIF, and "What I Learned" section.
+>
+> 🚩 **Two flagships:** **Attention-Flow Catalyst** (read-only small-cap *swing research*) and **Crucible** (autonomous *intraday execution*) — two genuinely different hard problems. Crucible is the chosen **first build**.
 
 ### 🔐 DataVault Analyst — *First AI Project*
 **AI-Powered PII-Safe Data Intelligence** | "Chat With Your Data"
@@ -135,7 +137,7 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 
 ---
 
-### 📈 [Attention-Flow Catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) — 🚀 Flagship
+### 📈 [Attention-Flow Catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) — 🚀 Flagship #1
 **AI-Powered Predictive Trigger Analysis for Small-Cap Stocks** | 🚧 Phase 1A Active
 
 > **Research Question:** Which trigger or combination best predicts +10% price moves within 3 trading days?
@@ -188,6 +190,41 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 
 ---
 
+### 🔥 [Crucible](https://github.com/manuel-reyes-ml/crucible) — 🚀 Flagship #2 *(started first)*
+**Autonomous Intraday Trading Research Platform** | 🚧 Phase 1 | 🦙 Local-First AI
+
+> **The question it answers, for any strategy:** Does this have a real edge that survives out-of-sample validation — and can an autonomous agent trade it without me babysitting it?
+
+**Strategy-agnostic platform** that takes any intraday strategy through three validation gates: **backtest → paper → live**. An LLM research analyst proposes strategy improvements, but its ideas are *proved* by deterministic backtests it never optimizes against — behind a **sealed out-of-sample vault** with every peek logged in an overfitting-budget ledger. That's what makes it defensible rather than an overfit black box.
+
+**Distinct from AFC (why two flagships, not redundancy):** AFC is *read-only research* on illiquid sub-$5 small-caps over a multi-day *swing* horizon; Crucible is *autonomous execution* on liquid names over an *intraday* horizon. ~70% shared engineering spine, two different hard problems.
+
+#### Three Build Phases (Phase 1 now in Stage 1; agentic phases mature across Stages 3–4)
+
+| Phase | What It Produces | Stage | Real money? |
+|-------|------------------|-------|-------------|
+| **1 — Backtest Engine** | Own event-driven harness + AI research loop + sealed OOS vault (IT-1 ORB + VWAP Reclaim plugins) | Stage 1 | No |
+| **2 — Paper Agent** | Migrate to NautilusTrader (engine-parity gate); autonomous paper-trading agent crew (LangGraph); local Qwen3/Ollama analyst | Stages 2–3 | No |
+| **3 — Live Agent** | Autonomous live micro-sizing on Alpaca + Schwab/TOS; deterministic core + multi-agent oversight | Stages 3–4 | Yes (small) |
+
+#### What Makes This Defensible
+
+| Dimension | Implementation |
+|-----------|----------------|
+| **Integrity controls** | Sealed out-of-sample vault, logged overfitting budget, walk-forward CV |
+| **Engine trust** | Own harness ↔ NautilusTrader engine-parity gate (validate the tool, don't just trust it) |
+| **AI safety** | LLM behind "the Wall" (sees aggregates, never raw rows); deterministic core owns every trade |
+| **Plugin design** | Strategies are plugins (Protocol + ABC + registry); IT-1 ORB + VWAP Reclaim prove the abstraction |
+| **Privacy + cost** | Local-first (Qwen3/Ollama) — no API fee, financial data stays on-machine |
+
+**Tech:** Python • own event-driven backtest harness → **NautilusTrader** (LGPL, free) • Optuna • DuckDB • Parquet • **Ollama/Qwen3 (local-first)** → Gemini → Anthropic → OpenAI • Pydantic • LangGraph • **Alpaca** (paper + live) + **Schwab Trader API/TOS** (live) • DeepEval • Docker • GitHub Actions CI
+
+> ⚖️ *Educational/research project. Not investment advice; makes no claim of positive expectancy — validation is the entire point.*
+
+[**→ View Project**](https://github.com/manuel-reyes-ml/crucible)
+
+---
+
 ## 📌 Repository Guide
 
 | Type | Repository | Description |
@@ -198,7 +235,8 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | 📄 **Document AI** | [formsense](https://github.com/manuel-reyes-ml/formsense) | Multimodal form extraction & validation |
 | 📊 **Enterprise Analytics** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | AI-powered workflow demand analysis |
 | 📺 **Consumer AI** | [streamsmart-optimizer](https://github.com/manuel-reyes-ml/streamsmart-optimizer) | Streaming subscription rotation advisor |
-| 📈 **Flagship Project** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | AI-powered predictive trigger system |
+| 📈 **Flagship #1** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | AI-powered predictive trigger system (swing research) |
+| 🔥 **Flagship #2** | [crucible](https://github.com/manuel-reyes-ml/crucible) | Autonomous intraday trading platform (backtest → paper → live) |
 | 📖 **Learning Journey** | [learning_journey](https://github.com/manuel-reyes-ml/learning_journey) | Public documentation |
 
 📚 [Data Portfolio Hub](https://github.com/manuel-reyes-ml/data-portfolio)
@@ -260,8 +298,11 @@ Central repository linking all projects with business context, technical details
 ![Anthropic SDK](https://img.shields.io/badge/Anthropic_SDK_(primary)-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama_(local--first)-000000?style=flat-square&logo=ollama&logoColor=white)
+![Qwen3](https://img.shields.io/badge/Qwen3_(local)-615CED?style=flat-square&logoColor=white)
 ![FastMCP](https://img.shields.io/badge/FastMCP-7C3AED?style=flat-square&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
@@ -274,6 +315,13 @@ Central repository linking all projects with business context, technical details
 ![RAGAS](https://img.shields.io/badge/RAGAS-4CAF50?style=flat-square&logoColor=white)
 ![SelfCheckGPT](https://img.shields.io/badge/SelfCheckGPT-FF9800?style=flat-square&logoColor=white)
 ![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat-square&logoColor=white)
+
+**Trading & Backtesting (Crucible)**
+
+![NautilusTrader](https://img.shields.io/badge/NautilusTrader-00BFA5?style=flat-square&logoColor=white)
+![Optuna](https://img.shields.io/badge/Optuna-2196F3?style=flat-square&logo=optuna&logoColor=white)
+![Alpaca](https://img.shields.io/badge/Alpaca_API-FFD400?style=flat-square&logoColor=black)
+![Schwab](https://img.shields.io/badge/Schwab_Trader_API-009DDC?style=flat-square&logoColor=white)
 
 **APIs & Domain Expertise**
 
@@ -334,8 +382,8 @@ Certification: AWS Certified Data Engineer Associate
 | Stage | Certifications & Focus |
 |-------|------------------------|
 | **Stage 2** | AWS Certified Data Engineer, Docker & Kubernetes Masterclass, BigQuery, Vector DBs (Pinecone/Weaviate), RAG Infrastructure |
-| **Stage 3** | Deep Learning Specialization, NVIDIA DLI, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama |
-| **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, Multi-Agent Systems |
+| **Stage 3** | Deep Learning Specialization, NVIDIA DLI, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama *(powers Crucible Phase 2 local LLM analyst)* |
+| **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, Multi-Agent Systems *(powers Crucible Phase 2–3 agent crew)* |
 | **Stage 5** | Automated Testing for LLMOps, System Design, Production AI Evaluation |
 
 ---
