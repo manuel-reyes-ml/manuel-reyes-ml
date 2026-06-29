@@ -7,7 +7,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Projects-667eea)](https://github.com/manuel-reyes-ml/data-portfolio)
-[![Roadmap](https://img.shields.io/badge/Roadmap-v8.3-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
+[![Roadmap](https://img.shields.io/badge/Roadmap-v8.9-28a745)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)
 
 ---
 
@@ -21,7 +21,7 @@ Most entry-level candidates have tutorial projects. **I have production code wit
 | ❌ No domain expertise | ✅ **15+ years business data experience** |
 | 📉 Basic skills | ✅ **4 years finance + 6 years trading** domain expertise |
 | 📦 Scattered portfolios | ✅ **8 production-grade projects** with skills progression (incl. **two flagships**: AFC + Crucible) |
-| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs with **Anthropic primary** + **local-first Qwen3/Ollama**, RAG, **FastMCP server**, Multimodal AI, Pydantic structured outputs) |
+| 🤖 No AI integration | ✅ **GenAI-first tools** (LLM SDKs with **Anthropic primary** + **local-first Qwen3/Ollama + LM Studio**, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Multimodal AI, Pydantic structured outputs) |
 | 📉 No AI evaluation | ✅ **Evaluation-driven development** (DeepEval + pytest, RAGAS, SelfCheckGPT, Docker in every project) |
 
 ---
@@ -84,6 +84,8 @@ RAG chatbot that answers employee policy questions with cited sources and auto-e
 | 🔌 MCP Server | FastMCP exposes retrieval as MCP tools — Cursor/Claude Desktop integration |
 
 **Tech:** Python • **Anthropic SDK (primary, Gemini fallback)** • ChromaDB • Gemini Embeddings • Streamlit • Pydantic • DeepEval • RAGAS • SelfCheckGPT • **FastMCP** • Docker • GitHub Actions CI
+
+**Upgrade path (Stage 2/3):** GraphRAG hybrid — **Neo4j knowledge graph + ChromaDB** — for multi-hop policy questions where vector-only retrieval stitches the wrong chunks together.
 
 ---
 
@@ -153,6 +155,7 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | T3: News Spike | RSS/GDELT | Media Coverage |
 | T4: Volume | yfinance (5 sub-signals) | Institutional Activity |
 | T5: Dilution State | SEC filings | Capital Structure |
+| T6: Squeeze-Context | short-interest / float / days-to-cover (signalcore) | Short-Squeeze Setup |
 
 #### Phase 1A — Backtest Engine (Weeks 1-6)
 - ✅ Dynamic stock screener with survivorship bias controls
@@ -184,7 +187,7 @@ Consumer-facing dashboard that optimizes streaming subscriptions through AI-driv
 | **AI Features** | LLM SDK (provider-agnostic) + PandasAI with guardrails, SQL transparency |
 | **AI Evaluation** | DeepEval + pytest, elevated faithfulness thresholds (0.9), CI/CD integrated |
 
-**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • **Anthropic SDK (primary, Gemini/OpenAI fallback)** • PandasAI • Streamlit • DeepEval • SelfCheckGPT + FActScore • Docker • GitHub Actions CI
+**Tech:** Python • DuckDB • Parquet • httpx async • edgartools • **Neo4j (Financial Knowledge Graph capstone)** • **Anthropic SDK (primary, Gemini/OpenAI fallback)** • PandasAI • Streamlit • DeepEval • SelfCheckGPT + FActScore • Docker • GitHub Actions CI
 
 [**→ View Project**](https://github.com/manuel-reyes-ml/attention-flow-catalyst)
 
@@ -299,6 +302,7 @@ Central repository linking all projects with business context, technical details
 ![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama_(local--first)-000000?style=flat-square&logo=ollama&logoColor=white)
+![LM Studio](https://img.shields.io/badge/LM_Studio_(local)-4A154B?style=flat-square&logoColor=white)
 ![Qwen3](https://img.shields.io/badge/Qwen3_(local)-615CED?style=flat-square&logoColor=white)
 ![FastMCP](https://img.shields.io/badge/FastMCP-7C3AED?style=flat-square&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
@@ -306,6 +310,7 @@ Central repository linking all projects with business context, technical details
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
+![Neo4j](https://img.shields.io/badge/Neo4j_(GraphRAG)-008CC1?style=flat-square&logo=neo4j&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
 
@@ -343,7 +348,7 @@ Cloud:         AWS (S3, Redshift, Lambda, Glue), BigQuery
 Containers:    Docker & Kubernetes Masterclass
 Orchestration: Apache Airflow, dbt (data build tool)
 Big Data:      PySpark, distributed computing
-Databases:     PostgreSQL, Vector DBs (Pinecone/Weaviate/Qdrant)
+Databases:     PostgreSQL, Vector DBs (Pinecone/Weaviate/Qdrant), Neo4j (GraphRAG)
 AI Systems:    RAG infrastructure, embedding pipelines, unstructured data ETL
 Certification: AWS Certified Data Engineer Associate
 ```
@@ -367,6 +372,8 @@ Certification: AWS Certified Data Engineer Associate
 - 🚧 **Generative AI Data Analyst Specialization** (Vanderbilt) — ChatGPT+SQL workflows, CLUE/TRUST/CAPTURE frameworks
 - 🚧 **ChatGPT Prompt Engineering for Developers** (DeepLearning.AI) — API basics, prompt design, few-shot learning
 - 🚧 **AI Python for Beginners** (DeepLearning.AI) — Andrew Ng's AI-first Python foundation
+- 🚧 **Building with the Claude API** (Anthropic Academy) — official Claude SDK source-of-truth
+- 📅 **Knowledge Graphs for RAG** (DeepLearning.AI) — GraphRAG with an SEC-filings demo
 - 📅 **30 Days of Streamlit Challenge** — Build AI UIs fast
 
 #### 🧪 Evaluation & Containerization (v8.2)
@@ -383,7 +390,7 @@ Certification: AWS Certified Data Engineer Associate
 |-------|------------------------|
 | **Stage 2** | AWS Certified Data Engineer, Docker & Kubernetes Masterclass, BigQuery, Vector DBs (Pinecone/Weaviate), RAG Infrastructure |
 | **Stage 3** | Deep Learning Specialization, NVIDIA DLI, Generative AI with LLMs (AWS), Fine-Tuning with PEFT, Ollama *(powers Crucible Phase 2 local LLM analyst)* |
-| **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, Multi-Agent Systems *(powers Crucible Phase 2–3 agent crew)* |
+| **Stage 4** | Agentic AI (Andrew Ng), MCP (Anthropic), LangGraph, CrewAI, **Loop Engineering** (human-in-the-loop gates), Multi-Agent Systems *(powers Crucible Phase 2–3 agent crew)* |
 | **Stage 5** | Automated Testing for LLMOps, System Design, Production AI Evaluation |
 
 ---
