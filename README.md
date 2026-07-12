@@ -1,8 +1,8 @@
 # Hi, I'm Manuel 👋
 
-![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-Data_Engineering_·_Applied_AI-blueviolet?style=for-the-badge)
+![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-AI--Focused_Data_Engineering_·_Applied_AI-blueviolet?style=for-the-badge)
 
-**Production AI & data systems — Data Engineering · Analytics Engineering · Applied AI** | Eval-first · measurable outcomes · proof over keywords
+**Production AI & data systems — AI-Focused Data Engineering · Analytics Engineering · Applied AI** | Eval-first · measurable outcomes · proof over keywords
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
@@ -17,7 +17,7 @@
 - 🧾 **1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship)*
 - 📜 **Employer AI track** — Azure AI Fundamentals (AI-901) → AI Agent Builder Associate (AB-620), building internal automations on the Microsoft/Copilot stack.
 
-**The arc:** Internal AI Builder → **AI-Focused Data Engineer / Analytics Engineer** → **Applied AI Engineer → Forward-Deployed Engineer (FDE) track**.
+**Where I am → where I'm headed:** Currently an **Internal AI Builder** (current stage). **Next goal:** **AI-Focused Data Engineer / Analytics Engineer** — building AI-aligned, AI-managed data pipelines, not vanilla DE. **After that:** **Applied AI Engineer** (as part of a Forward-Deployed Engineer / FDE track).
 
 ---
 
@@ -166,6 +166,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![Cursor](https://img.shields.io/badge/Cursor_AI-000000?style=flat-square&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash/CLI-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Makefile](https://img.shields.io/badge/Makefile-A42E2B?style=flat-square&logo=gnu&logoColor=white)
 
 **Data Analysis & Processing**
 
@@ -207,6 +208,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=flat-square&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 
 **AI & GenAI**
 
@@ -219,6 +221,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![FastMCP](https://img.shields.io/badge/FastMCP-7C3AED?style=flat-square&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode_(agentic_harness)-000000?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
@@ -230,6 +233,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![RAGAS](https://img.shields.io/badge/RAGAS-4CAF50?style=flat-square&logoColor=white)
 ![GEval](https://img.shields.io/badge/GEval-9C27B0?style=flat-square&logoColor=white)
 ![SelfCheckGPT](https://img.shields.io/badge/SelfCheckGPT-FF9800?style=flat-square&logoColor=white)
+![FActScore](https://img.shields.io/badge/FActScore-00897B?style=flat-square&logoColor=white)
 ![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat-square&logoColor=white)
 
 **Trading & Backtesting (Crucible / AFC)**
@@ -298,7 +302,8 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 - 🧾 **Live production system** in a regulated financial domain — with evaluation gates, not vibes
 - 🏰 **Finance/ERISA + trading domain depth** — 2 yrs ERISA-regulated operations + 5+ yrs independent trading
-- 🌅 **4:30 AM club** (early-morning focused study) • ♟️ **Chess** (strategy translates to systems)
+- 🌅 **4:30 AM club** (early-morning focused study)
+- ♟️ **Chess player** (strategy translates to systems)
 - 🤖 Fascinated by **LLMs transforming financial analysis** — behind eval gates and safety barriers
 - 📚 Reading: *Machine Learning for Algorithmic Trading* • *Hands-On LLMs* • *Building Effective Agents* (Anthropic)
 - 🎯 Obsessed with **data-driven decisions** and **proof over keywords**
