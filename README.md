@@ -1,8 +1,8 @@
 # Hi, I'm Manuel 👋
 
-![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-Regulated_Finance-blueviolet?style=for-the-badge)
+![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-Data_Engineering_·_Applied_AI-blueviolet?style=for-the-badge)
 
-**Production AI & data systems, deployed in a regulated (ERISA/finance) domain** | Eval-first · measurable outcomes · proof over keywords
+**Production AI & data systems — Data Engineering · Analytics Engineering · Applied AI** | Eval-first · measurable outcomes · proof over keywords
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
@@ -14,7 +14,7 @@
 ## 🎯 What I'm Building Right Now
 
 - 🏗️ **PolicyPulse** — RAG → GraphRAG chatbot over retirement-plan documents, with **blocking eval gates** (RAGAS/DeepEval) and a **FastMCP server**. *(Applied-AI flagship)*
-- 🧾 **DataVault / 1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship)*
+- 🧾 **1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship)*
 - 📜 **Employer AI track** — Azure AI Fundamentals (AI-901) → AI Agent Builder Associate (AB-620), building internal automations on the Microsoft/Copilot stack.
 
 **The arc:** Internal AI Builder → **AI-Focused Data Engineer / Analytics Engineer** → **Applied AI Engineer → Forward-Deployed Engineer (FDE) track**.
@@ -23,25 +23,25 @@
 
 ## 💼 What Makes Me Different
 
-The 2026 market is *saturated at the keyword layer and starved at the evidence layer.* Most candidates have tutorial projects. **I ship production code with measurable business impact, in a regulated domain, with evaluation gates.**
+My focus is **proof over keywords**: production systems with evaluation gates and measurable business impact — across data engineering and applied AI. Deep domain knowledge (including regulated finance) is an edge I bring, not the boundary of where I work.
 
 | Most Candidates | What I Bring |
 |:----------------|:-------------|
 | 🎓 Tutorial projects (Titanic, taxi data) | ✅ **Live production ETL** at a financial firm — caught **450+ incorrect tax codes** before participants received bad documents |
-| ❌ No domain expertise | ✅ **~15 years business data** + **4 years financial-services / ERISA** operations — an explicit *plus* in frontier-lab FDE specs |
+| ❌ No domain expertise | ✅ **15+ yrs business operations** (manufacturing, digital marketing) · **2 yrs ERISA-regulated financial operations** · **5+ yrs independent trading** |
 | 📦 Ten shallow repos | ✅ **Focused portfolio: 3 flagships + 2 supporting** — real systems, not a repo pile |
 | 🤖 "Prompts ChatGPT" | ✅ **Production AI**: Anthropic SDK primary, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Pydantic structured outputs, privacy-routed local models (Ollama/LM Studio) |
-| 📉 No evaluation | ✅ **Eval-first, blocking gates** (DeepEval/RAGAS/GEval, faithfulness ≥ 0.9) — the single rarest, highest-signal skill in 2026 AI hiring |
+| 📉 No evaluation | ✅ **Eval-first, blocking gates** (DeepEval/RAGAS/GEval, faithfulness ≥ 0.9) — the discipline that separates prototypes from production systems |
 | 🧰 Notebooks & one-off scripts | ✅ **Production engineering**: typed Python, `pyproject.toml` + `src/`, ruff/mypy, Docker, GitHub Actions CI, Conventional Commits |
 
 ---
 
-## 🚀 Production Highlight — the seed of the DE flagship
+## 🚀 Production Highlight — the live core of the DE flagship
 
 ### 🧾 [1099 Reconciliation ETL Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
 **Status:** ✅ Live in production | 🌐 Public repository
 
-Automated Python ETL for retirement-plan distribution reconciliation at Daybright Financial — now being production-hardened into the **DataVault / 1099 Data Platform** (Data Engineering flagship).
+Automated Python ETL for retirement-plan distribution reconciliation at Daybright Financial — the live system now being production-hardened into the **1099 Data Platform** (Data Engineering flagship).
 
 | Metric | Impact |
 |--------|--------|
@@ -58,14 +58,14 @@ Automated Python ETL for retirement-plan distribution reconciliation at Daybrigh
 
 ## 🏆 Portfolio — 3 Flagships + 2 Supporting
 
-> A deliberately focused portfolio. In 2026, hiring managers score **2–4 substantial projects** far higher than a repo pile. Each flagship targets a different door: Applied AI, Data Engineering, and autonomous-systems safety.
+> A deliberately focused portfolio — a few substantial systems, each targeting a different problem: Applied AI, Data Engineering, and autonomous-systems safety.
 >
 > 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + `src/` + `py.typed` + ruff + mypy • Conventional Commits.
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
 **RAG → GraphRAG document intelligence** | 🔌 Exposes a **FastMCP server**
 
-Answers retirement-plan policy questions with cited sources, auto-escalates when uncertain, and enforces **per-document access control at retrieval time** — the regulated-finance differentiator.
+Answers retirement-plan policy questions with cited sources, auto-escalates when uncertain, and enforces **per-document access control at retrieval time** — a differentiator for sensitive-document use cases.
 
 | Dimension | Implementation |
 |-----------|----------------|
@@ -79,10 +79,10 @@ Answers retirement-plan policy questions with cited sources, auto-escalates when
 
 ---
 
-### 🏁 Flagship 2 — [DataVault / 1099 Data Platform](https://github.com/manuel-reyes-ml/datavault-analyst) · *Data Engineering*
-**Production financial data platform** (built on the live 1099 pipeline lineage)
+### 🏁 Flagship 2 — [1099 Data Platform](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) · *Data Engineering*
+**Production financial data platform** — the live 1099 pipeline (above), hardened end-to-end
 
-The end-to-end system DE/AE hiring managers actually score: ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** → **data-quality contracts** → **deployed (Docker/ECS)** → **monitored**, with written incident/postmortems. Adds a **semantic / metrics layer** for the Analytics-Engineer story.
+Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** → **data-quality contracts** → **deployed (Docker/ECS)** → **monitored**, with written incident/postmortems. Adds a **semantic / metrics layer** for the Analytics-Engineer story.
 
 | Layer | Implementation |
 |-------|----------------|
@@ -94,14 +94,14 @@ The end-to-end system DE/AE hiring managers actually score: ingestion → **dbt-
 
 **Tech:** Python • SQL • **dbt** • **Airflow** • **Snowflake/BigQuery** • DuckDB • Parquet • **Great Expectations** • Docker • **AWS (S3, ECS)** • **Terraform** • GitHub Actions CI
 
-**Real outcome carried from production:** 450+ incorrect tax codes caught before participants received bad documents.
+**Retains scheduling priority** — it feeds the first external move.
 
 ---
 
 ### 🏁 Flagship 3 — [Crucible](https://github.com/manuel-reyes-ml/crucible) · *Autonomous Execution Research* | 🦙 Local-First AI
 **Backtest → paper → live** autonomous intraday research platform
 
-The deployment-safety engineering that FDE interviews in regulated finance probe: a **mandatory human-in-the-loop sign-off + kill-switch** on the live path, and an **"LLM behind the Wall"** information barrier — the model sees only in-sample aggregated stats, never raw ticker-date outcomes. A **verifier agent** sits before the human gate.
+Production-safety engineering for an autonomous system handling irreversible actions: a **mandatory human-in-the-loop sign-off + kill-switch** on the live path, and an **"LLM behind the Wall"** information barrier — the model sees only in-sample aggregated stats, never raw ticker-date outcomes. A **verifier agent** sits before the human gate. Grounded in 5+ years of hands-on independent trading.
 
 | Dimension | Implementation |
 |-----------|----------------|
@@ -118,7 +118,7 @@ The deployment-safety engineering that FDE interviews in regulated finance probe
 ---
 
 ### 🧩 Supporting — [FormSense](https://github.com/manuel-reyes-ml/formsense) · *Document AI*
-Multimodal **agentic workflow** (Anthropic *Building Effective Agents* taxonomy — interview-defensible vocabulary) that extracts and validates synthetic ERISA distribution forms against a frozen Pydantic schema contract, with **GEval schema-adherence** gates and smart routing.
+Multimodal **agentic workflow** (Anthropic *Building Effective Agents* taxonomy — precise vocabulary, *not* multi-agent) that extracts and validates synthetic ERISA distribution forms against a frozen Pydantic schema contract, with **GEval schema-adherence** gates and smart routing.
 
 **Tech:** Python • Vision LLM • Streamlit • Pydantic • DeepEval (GEval) • Docker • GitHub Actions CI
 
@@ -129,18 +129,25 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ---
 
+### 📅 Also in the pipeline (planned)
+- 🔐 **[DataVault Analyst](https://github.com/manuel-reyes-ml/datavault-analyst)** — PII-safe natural-language analytics ("chat with your data") with governance-as-code guardrails and Pydantic-validated outputs.
+- 📊 **[Operations-Demand-Intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence)** — workflow-demand analytics on enterprise OnBase data for data-driven staffing.
+- 📺 **[StreamSmart Optimizer](https://github.com/manuel-reyes-ml/streamsmart-optimizer)** — consumer AI app (external APIs, async HTTP, rotation/cost optimization).
+
+---
+
 ## 📌 Repository Guide
 
 | Type | Repository | Description |
 |------|------------|-------------|
-| 🏭 **Production seed** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | Live ETL ($15K/yr savings) — seed of the DE flagship |
 | 🏁 **Flagship — Applied AI** | [policypulse](https://github.com/manuel-reyes-ml/policypulse) | RAG → GraphRAG + FastMCP + access-control retrieval |
-| 🏁 **Flagship — Data Eng** | [datavault-analyst](https://github.com/manuel-reyes-ml/datavault-analyst) | Production financial data platform (dbt/Airflow/contracts) |
+| 🏁 **Flagship — Data Eng** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | Live ETL → production data platform (dbt/Airflow/contracts) |
 | 🏁 **Flagship — Autonomous** | [crucible](https://github.com/manuel-reyes-ml/crucible) | Backtest→paper→live; HITL + kill-switch + LLM-behind-the-Wall |
 | 🧩 **Supporting — Doc AI** | [formsense](https://github.com/manuel-reyes-ml/formsense) | Multimodal agentic-workflow form extraction & validation |
 | 🧩 **Supporting — Research** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | Read-only GraphRAG financial research (faithfulness ≥ 0.9) |
-| 📊 Earlier work | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | Workflow-demand analytics |
-| 📺 Earlier work | [streamsmart-optimizer](https://github.com/manuel-reyes-ml/streamsmart-optimizer) | Consumer AI (API integration, async) |
+| 📅 **Planned** | [datavault-analyst](https://github.com/manuel-reyes-ml/datavault-analyst) | PII-safe natural-language data analytics |
+| 📅 **Planned** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | Workflow-demand analytics |
+| 📅 **Planned** | [streamsmart-optimizer](https://github.com/manuel-reyes-ml/streamsmart-optimizer) | Consumer AI (API integration, async) |
 | 📖 Journey | [learning_journey](https://github.com/manuel-reyes-ml/learning_journey) | Public documentation & roadmap |
 
 📚 [Data Portfolio Hub](https://github.com/manuel-reyes-ml/data-portfolio) — central index with business context, technical details, and impact metrics.
@@ -234,7 +241,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![edgartools](https://img.shields.io/badge/edgartools_(SEC)-002868?style=flat-square&logoColor=white)
 ![yfinance](https://img.shields.io/badge/yfinance-7B1FA2?style=flat-square&logoColor=white)
 
-**Domain Expertise:** ~15 years business data • 4 years financial services / ERISA operations • active-trading domain knowledge (fuels the research flagships)
+**Domain Expertise:** 15+ years business operations (manufacturing, digital marketing) • 2 years ERISA-regulated financial operations (retirement plans) • 5+ years independent trading (fuels the research flagships)
 
 ---
 
@@ -248,7 +255,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 | **2** | Months 9–20 | **AI-Focused Data Engineer / Analytics Engineer** (dual-target) | ⚪ Planned |
 | **3** | Months 21–32 | **Applied AI Engineer → FDE track** | 🎯 Goal |
 
-> **Fallback logic:** if internal elevation produces no scope change by Month 8, the external **Data Engineer / Analytics Engineer** search opens at Month 10–12 — never a Data Analyst search.
+> **Fallback logic:** if internal elevation produces no scope change by Month 8, the external **Data Engineer / Analytics Engineer** search opens at Month 10–12 — not a Data Analyst search.
 
 **[→ View Interactive Roadmap (v10.0)](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
 
@@ -270,7 +277,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 | ![CCA-F](https://img.shields.io/badge/Anthropic-CCA--F-D97757?style=flat-square&logo=anthropic&logoColor=white) | Personal | S3 |
 | ![dbt AE](https://img.shields.io/badge/dbt_Analytics_Engineering-conditional-FF694B?style=flat-square&logo=dbt&logoColor=white) | Personal *(if AE apps stall)* | S2 |
 
-### Coursework credentials (Coursera Professional Certificates — mid-tier resume signal)
+### Coursework credentials (Coursera Professional Certificates)
 - 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — *Stage 1 spine*: RAG, LangChain, fine-tuning, deployment
 - 📅 **AWS Data Engineering Professional Certificate** — *Stage 2 DE spine*: S3, Redshift, Glue, EMR, Kinesis
 
@@ -290,7 +297,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ## ⚡ Quick Facts
 
 - 🧾 **Live production system** in a regulated financial domain — with evaluation gates, not vibes
-- 🏰 **Finance/ERISA domain moat** — explicitly listed as a plus in frontier-lab FDE specs
+- 🏰 **Finance/ERISA + trading domain depth** — 2 yrs ERISA-regulated operations + 5+ yrs independent trading
 - 🌅 **4:30 AM club** (early-morning focused study) • ♟️ **Chess** (strategy translates to systems)
 - 🤖 Fascinated by **LLMs transforming financial analysis** — behind eval gates and safety barriers
 - 📚 Reading: *Machine Learning for Algorithmic Trading* • *Hands-On LLMs* • *Building Effective Agents* (Anthropic)
@@ -304,8 +311,10 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ### 📈 Stats & Contributions
 
+<div align="center">
   <img src="https://github-readme-stats-theta-three-33.vercel.app/api?username=manuel-reyes-ml&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="165" alt="github stats" />
   <img src="https://streak-stats.demolab.com?user=manuel-reyes-ml&theme=tokyonight&hide_border=true" height="165" alt="streak stats" />
+</div>
 
 ### 💻 Most Used Languages
 
@@ -318,13 +327,13 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ## 🌐 Let's Connect
 
 **Open to:**
-- 💼 **Data Engineer / Analytics Engineer** roles (dual-target; AE more remote-accessible) — and **Applied AI / Forward-Deployed Engineer** roles in fintech / regulated industries
+- 💼 **Data Engineer / Analytics Engineer** roles (dual-target; AE more remote-accessible) — and **Applied AI / Forward-Deployed Engineer** roles across industries
 - 🤝 Code reviews and technical discussions
 - 🎓 Knowledge exchange on data + AI + finance
 
 **Connect if you:**
 - Value production code and evaluation evidence over tutorial completions
-- Are hiring in a **regulated / fintech** context where domain depth and controls matter
+- Value domain depth and production controls (regulated/fintech a bonus, not a requirement)
 - Are building **AI-ready data infrastructure** or **applied-AI systems** that must be trusted in production
 
 ---
@@ -341,12 +350,12 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 <summary><b>💭 Building in Public — why</b> (click to expand)</summary>
 <br>
 
-I've worked with data my whole career — manufacturing, bookkeeping, financial services, and active trading. One truth kept repeating: **data-driven decisions beat intuition.** I hit a ceiling — I could analyze data well but couldn't build the automated systems to scale insight. So I'm building them, publicly.
+I've worked with data my whole career — manufacturing, digital marketing, financial-plan operations, and years of independent trading. One truth kept repeating: **data-driven decisions beat intuition.** I hit a ceiling — I could analyze data well but couldn't build the automated systems to scale insight. So I'm building them, publicly.
 
 - ✅ **Transparency:** real learning is messy — I show process, not just polished results
 - ✅ **Accountability:** public commits are public commitment
 - ✅ **Evidence:** this profile *is* the proof of ability and trajectory
 
-The bet isn't more certificates or broader titles — it's **proof**: production systems with evaluation gates, deployed in a regulated domain, with stories a hiring manager can interrogate.
+The bet isn't more certificates or broader titles — it's **proof**: production systems with evaluation gates, deployed and measured, with stories that stand up to scrutiny.
 
 </details>
