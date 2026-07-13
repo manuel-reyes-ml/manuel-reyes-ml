@@ -92,7 +92,7 @@ Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** �
 | 📦 Deploy & ops | **Docker → ECS/Fargate**, Terraform basics, incident writeups |
 | 📊 Semantic layer | Metric definitions + dashboard handoff (Power BI) — the AE differentiator |
 
-**Tech:** Python • SQL • **dbt** • **Airflow** • **Snowflake/BigQuery** • DuckDB • Parquet • **Great Expectations** • Docker • **AWS (S3, ECS)** • **Terraform** • GitHub Actions CI
+**Tech:** Python • SQL • **dbt** • **Airflow** • **Snowflake** (primary warehouse) • BigQuery/Fabric awareness • DuckDB • Parquet • **Great Expectations** • Docker • **AWS (S3, ECS)** • **Terraform** • GitHub Actions CI
 
 **Retains scheduling priority** — it feeds the first external move.
 
@@ -278,8 +278,12 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 | ![NCA-GENL](https://img.shields.io/badge/NVIDIA-NCA--GENL-76B900?style=flat-square&logo=nvidia&logoColor=white) | Personal | S3 |
 | ![Databricks](https://img.shields.io/badge/Databricks-GenAI_Engineer_Assoc-FF3621?style=flat-square&logo=databricks&logoColor=white) | Personal | S3 |
 | ![Neo4j](https://img.shields.io/badge/Neo4j-Certified_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=white) | Personal | S3 |
+| ![AI-103](https://img.shields.io/badge/Azure_AI_Apps_&_Agents_Dev-AI--103-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | Employer (reimbursed) | S3 |
 | ![CCA-F](https://img.shields.io/badge/Anthropic-CCA--F-D97757?style=flat-square&logo=anthropic&logoColor=white) | Personal | S3 |
 | ![dbt AE](https://img.shields.io/badge/dbt_Analytics_Engineering-conditional-FF694B?style=flat-square&logo=dbt&logoColor=white) | Personal *(if AE apps stall)* | S2 |
+
+> **AI-103** (code-first Azure/Foundry — Python, agentic + RAG) is the employer-reimbursable mirror of **CCA-F**: AB-620 is the low-code Copilot Studio maker path, AI-103 the code-first developer path.
+> *Conditional platform-cert menu (take **ONE**, matched to a target employer's stack — never stacked): lakehouse slot — **DP-750** (Azure Databricks, reimbursed) preferred / SnowPro Core (COF-C03) / Databricks DE fallback.*
 
 ### Coursework credentials (Coursera Professional Certificates)
 - 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — *Stage 1 spine*: RAG, LangChain, fine-tuning, deployment
