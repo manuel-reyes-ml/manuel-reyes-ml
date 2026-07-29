@@ -33,6 +33,7 @@ My focus is **proof over keywords**: production systems with evaluation gates an
 | 🤖 "Prompts ChatGPT" | ✅ **Production AI**: Anthropic SDK primary, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Pydantic structured outputs, privacy-routed local models (Ollama/LM Studio) |
 | 📉 No evaluation | ✅ **Eval-first, blocking gates** (DeepEval/RAGAS/GEval, faithfulness ≥ 0.9) — the discipline that separates prototypes from production systems |
 | 🧰 Notebooks & one-off scripts | ✅ **Production engineering**: typed Python, **`uv` + committed `uv.lock`** (reproducible by construction), `pyproject.toml` + `src/`, ruff/mypy, Docker, GitHub Actions CI, Conventional Commits |
+| 🖨️ `print()` debugging | ✅ **Observable by construction** — **`structlog`** renders my logs *and my dependencies'* through one chain; a **PII-redaction processor** sits inside it, so masking is structural rather than remembered per call site (the discipline a regulated domain actually requires) |
 | 🗣️ Pure coding-interview prep | ✅ **FDE discovery & decomposition edge** — the customer-facing case-study round that filters most technically-strong candidates; **2 yrs ERISA client-facing operations** is the structural advantage, and every flagship carries an ADR set + C4 diagram to defend the design |
 
 ---
@@ -61,7 +62,7 @@ Automated Python ETL for retirement-plan distribution reconciliation at Daybrigh
 
 > A deliberately focused portfolio — a few substantial systems, each targeting a different problem: Applied AI, Data Engineering, and autonomous-systems safety.
 >
-> 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • Conventional Commits • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
+> 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • **structured logging (`structlog` over stdlib via `ProcessorFormatter`) + PII-redaction processor** • **typed config** (`pydantic-settings`, `SecretStr` credentials) • **capped jittered retries** (`stamina`) • Conventional Commits • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
 **RAG → GraphRAG document intelligence** | 🔌 Exposes a **FastMCP server**
@@ -210,6 +211,9 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![ruff](https://img.shields.io/badge/ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black)
 ![uv](https://img.shields.io/badge/uv_sync_--frozen-DE5FE9?style=flat-square&logo=uv&logoColor=white)
 ![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=flat-square&logoColor=white)
+![structlog](https://img.shields.io/badge/structlog-3B5F8A?style=flat-square&logoColor=white)
+![stamina](https://img.shields.io/badge/stamina_(retries)-6A4C93?style=flat-square&logoColor=white)
+![pydantic-settings](https://img.shields.io/badge/pydantic--settings-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
@@ -317,6 +321,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 - 🤖 Fascinated by **LLMs transforming financial analysis** — behind eval gates and safety barriers
 - 📚 Reading: *Machine Learning for Algorithmic Trading* • *Hands-On LLMs* • *Building Effective Agents* (Anthropic)
 - ⚡ **Reproducible by default** — uv-managed environments with committed lockfiles across every repo
+- 🔎 **Observable by default** — structured logs with run-scoped context and redaction in the pipeline, not bolted on
 - 🎯 Obsessed with **data-driven decisions** and **proof over keywords**
 
 ---
