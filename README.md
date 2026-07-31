@@ -27,7 +27,7 @@ My focus is **proof over keywords**: production systems with evaluation gates an
 
 | Most Candidates | What I Bring |
 |:----------------|:-------------|
-| 🎓 Tutorial projects (Titanic, taxi data) | ✅ **Live production ETL** at a financial firm — caught **450+ incorrect tax codes** before participants received bad documents |
+| 🎓 Tutorial projects (Titanic, taxi data) | ✅ **Live production ETL** in an **ERISA-regulated retirement-plan operations environment** — with a derived-vs-reported validation gate that quarantines mismatches before distribution |
 | ❌ No domain expertise | ✅ **15+ yrs business operations** (manufacturing, digital marketing) · **2 yrs ERISA-regulated financial operations** · **5+ yrs independent trading** |
 | 📦 Ten shallow repos | ✅ **Focused portfolio: 3 flagships + 2 supporting** — real systems, not a repo pile |
 | 🤖 "Prompts ChatGPT" | ✅ **Production AI**: Anthropic SDK primary, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Pydantic structured outputs, privacy-routed local models (Ollama/LM Studio) |
@@ -43,14 +43,16 @@ My focus is **proof over keywords**: production systems with evaluation gates an
 ### 🧾 [1099 Reconciliation ETL Pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)
 **Status:** ✅ Live in production | 🌐 Public repository
 
-Automated Python ETL for retirement-plan distribution reconciliation at Daybright Financial — the live system now being production-hardened into the **1099 Data Platform** (Data Engineering flagship).
+Automated Python ETL for retirement-plan distribution reconciliation in an **ERISA-regulated retirement-plan operations environment** — the live system now being production-hardened into the **1099 Data Platform** (Data Engineering flagship).
+
+> 🔒 *Regulated-environment disclosure: mechanism and non-identifying relative deltas only. No absolute cost figures, participant or plan data, client identifiers, or employer-identifying volumes.*
 
 | Metric | Impact |
 |--------|--------|
 | ⚡ Time Saved | **95% reduction** (4–6 hours → 15 min/week) |
-| 💰 Cost Savings | **$15,000+/year** in labor |
-| 📊 Scalability | **10x capacity** (300+ accounts vs 30 manual) |
-| ✅ Accuracy | **Zero errors** since deployment |
+| 📈 Scale | Handles the **full distribution book without added headcount** |
+| 🛡️ Correctness | **Derived-vs-reported Box-7 validation gate** — mismatches quarantined before distribution |
+| ✅ Reliability | **Reconciliation success rate held against a stated freshness SLA** |
 
 **Tech:** Python • pandas • openpyxl • matplotlib • data validation • pytest • GitHub Actions CI • faker (synthetic data)
 
@@ -65,6 +67,10 @@ Automated Python ETL for retirement-plan distribution reconciliation at Daybrigh
 > 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • **structured logging (`structlog` over stdlib via `ProcessorFormatter`) + PII-redaction processor** • **typed config** (`pydantic-settings`, `SecretStr` credentials) • **capped jittered retries** (`stamina`) • Conventional Commits • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
+
+> **① Production** — Containerised RAG + **FastMCP** service; **RAGAS/DeepEval blocking gates are merge conditions**, not reports; confidence-gated escalation path.
+> **② Cost** — Cost-per-query and p95 latency measured across inference substrates; local-vs-cloud routing policy; embedding/re-index cost.
+> **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · retrieval-strategy **ADRs with rejected alternatives** · C4 Context + Container · MCP read → approval-gated write boundary.
 **RAG → GraphRAG document intelligence** | 🔌 Exposes a **FastMCP server**
 
 Answers retirement-plan policy questions with cited sources, auto-escalates when uncertain, and enforces **per-document access control at retrieval time** — a differentiator for sensitive-document use cases.
@@ -82,6 +88,10 @@ Answers retirement-plan policy questions with cited sources, auto-escalates when
 ---
 
 ### 🏁 Flagship 2 — [1099 Data Platform](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) · *Data Engineering*
+
+> **① Production** — Live, depended-upon pipeline in a regulated environment — reconciliation success rate, freshness SLA, quarantine/retry behaviour, schema contracts, on-call reality.
+> **② Cost** — 🔒 *Deliberately constrained.* Mechanism + non-identifying relative deltas + manual hours removed. No absolute figures.
+> **③ Architecture** — **ERISA-driven ADRs** (retention, auditability, reconciliation guarantees, PII boundary) · C4 Context + Container · dbt tests and data contracts.
 **Production financial data platform** — the live 1099 pipeline (above), hardened end-to-end
 
 Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** → **data-quality contracts** → **deployed (Docker/ECS)** → **monitored**, with written incident/postmortems. Adds a **semantic / metrics layer** for the Analytics-Engineer story, plus an **S3 DataVault Applied-AI layer** (NL-to-SQL over the semantic layer, HITL on every write).
@@ -101,6 +111,10 @@ Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** �
 ---
 
 ### 🏁 Flagship 3 — [Crucible](https://github.com/manuel-reyes-ml/crucible) · *Autonomous Execution Research* | 🦙 Local-First AI
+
+> **① Production** — Paper→live path with **mandatory human sign-off + kill-switch**; deterministic core owns every trade; intended-vs-filled reconciliation.
+> **② Cost** — Compute cost per backtest sweep, data-feed cost, sweep efficiency (results per compute-hour).
+> **③ Architecture** — Multi-timeframe design · execution and risk-control ADRs · C4 Context + Container · `signalcore` boundary (primitives in, strategy logic out).
 **Backtest → paper → live** autonomous **multi-timeframe (swing → intraday)** research platform *(swing-first is the lower-risk on-ramp; intraday plugins follow once swing clears all three gates)*
 
 Production-safety engineering for an autonomous system handling irreversible actions: a **mandatory human-in-the-loop sign-off + kill-switch** on the live path, and an **"LLM behind the Wall"** information barrier — the model sees only in-sample aggregated stats, never raw ticker-date outcomes. A **verifier agent** sits before the human gate. Grounded in 5+ years of hands-on independent trading.
@@ -120,11 +134,19 @@ Production-safety engineering for an autonomous system handling irreversible act
 ---
 
 ### 🧩 Supporting — [FormSense](https://github.com/manuel-reyes-ml/formsense) · *Document AI*
+
+> **① Production** — Deploy path (Docker + CI) with **GEval schema-adherence gates** as merge conditions; smart routing on low confidence.
+> **② Cost** — ⚪ Optional at supporting tier — not manufactured where there is nothing to report.
+> **③ Architecture** — Frozen Pydantic schema contract · full ADR set + C4 Context · document → parse → validate → route boundary.
 Multimodal **agentic workflow** (Anthropic *Building Effective Agents* taxonomy — precise vocabulary, *not* multi-agent) that extracts and validates synthetic ERISA distribution forms against a frozen Pydantic schema contract, with **GEval schema-adherence** gates and smart routing.
 
 **Tech:** Python • Vision LLM • Streamlit • Pydantic • DeepEval (GEval) • Docker • GitHub Actions CI
 
 ### 🧩 Supporting — [Attention-Flow Catalyst (AFC)](https://github.com/manuel-reyes-ml/attention-flow-catalyst) · *Research*
+
+> **① Production** — Read-only research loop; **faithfulness ≥ 0.9 as a blocking gate** — the eval-first premise is the deliverable.
+> **② Cost** — ⚪ Optional at supporting tier. Where it applies: cost-per-screen-run and embedding/re-index cost.
+> **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · full ADR set + C4 Context · `signalcore` boundary (primitives in, thresholds out).
 Read-only **GraphRAG** financial-research loop over small-cap trigger signals, with a **faithfulness ≥ 0.9** evaluation showcase (financial-data sensitivity). Demonstrates bounded, unattended-safe agent design. *The eval-first faithfulness benchmark ships in S1 → S3.*
 
 **Tech:** Python • DuckDB • Parquet • edgartools • **Neo4j + ChromaDB (GraphRAG)** • **Anthropic SDK** • DeepEval • SelfCheckGPT + FActScore • Docker • CI
@@ -275,6 +297,11 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ## 🎓 Education & Certifications
 
+> *Ordered by the roadmap's v10.0 Correction 19 credential ladder: **accredited degree → proctored vendor exams → coursework certificates → completion certificates**. Shipped production systems sit above all of them — see the Portfolio section.*
+
+### 🎓 Degree (parallel track)
+- 📅 **Georgia Tech OMSCS** — M.S. Computer Science, **Computing Systems** specialization (distributed systems, databases, OS, architecture). Mapped to Stages 2–3 as a substitute for redundant self-study; AI/ML electives substitute for the ML-literacy module. *Academic projects kept separate from public repos.*
+
 ### Certification stack — *replace, not stack* (each credential serves a named purpose)
 
 | Cert | Track | Stage |
@@ -306,10 +333,6 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 - 🚧 **uv — Python packaging & environments** ([Astral official docs](https://docs.astral.sh/uv/) + [Al Sweigart's quickstart](https://inventwithpython.com/blog/uv-quickstart-tutorial.html)) — the tool every repo now builds on
 - ⏸️ *Conditional:* **Conda Basics** (Anaconda Learning) — reserved for Crucible **only if** it grows compiled numerical / CUDA / BLAS backends
 - ⭐ *Elective:* **Statistics with Python** (U. Michigan) — inferential module feeds eval statistics
-
-### 🎓 Degree (parallel track)
-- 📅 **Georgia Tech OMSCS** — M.S. Computer Science, **Computing Systems** specialization (distributed systems, databases, OS, architecture). Mapped to Stages 2–3 as a substitute for redundant self-study; AI/ML electives substitute for the ML-literacy module. *Academic projects kept separate from public repos.*
-
 ---
 
 ## ⚡ Quick Facts
