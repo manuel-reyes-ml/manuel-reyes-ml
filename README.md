@@ -68,10 +68,11 @@ Automated Python ETL for retirement-plan distribution reconciliation in an **ERI
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
 
-> **① Production** — Containerised RAG + **FastMCP** service; **RAGAS/DeepEval blocking gates are merge conditions**, not reports; confidence-gated escalation path.
-> **② Cost** — Cost-per-query and p95 latency measured across inference substrates; local-vs-cloud routing policy; embedding/re-index cost.
-> **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · retrieval-strategy **ADRs with rejected alternatives** · C4 Context + Container · MCP read → approval-gated write boundary.
 **RAG → GraphRAG document intelligence** | 🔌 Exposes a **FastMCP server**
+
+- **① Production** — Containerised RAG + **FastMCP** service; **RAGAS/DeepEval blocking gates are merge conditions**, not reports; confidence-gated escalation path.
+- **② Cost** — Cost-per-query and p95 latency measured across inference substrates; local-vs-cloud routing policy; embedding/re-index cost.
+- **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · retrieval-strategy **ADRs with rejected alternatives** · C4 Context + Container · MCP read → approval-gated write boundary.
 
 Answers retirement-plan policy questions with cited sources, auto-escalates when uncertain, and enforces **per-document access control at retrieval time** — a differentiator for sensitive-document use cases.
 
@@ -89,10 +90,11 @@ Answers retirement-plan policy questions with cited sources, auto-escalates when
 
 ### 🏁 Flagship 2 — [1099 Data Platform](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) · *Data Engineering*
 
-> **① Production** — Live, depended-upon pipeline in a regulated environment — reconciliation success rate, freshness SLA, quarantine/retry behaviour, schema contracts, on-call reality.
-> **② Cost** — 🔒 *Deliberately constrained.* Mechanism + non-identifying relative deltas + manual hours removed. No absolute figures.
-> **③ Architecture** — **ERISA-driven ADRs** (retention, auditability, reconciliation guarantees, PII boundary) · C4 Context + Container · dbt tests and data contracts.
 **Production financial data platform** — the live 1099 pipeline (above), hardened end-to-end
+
+- **① Production** — Live, depended-upon pipeline in a regulated environment — reconciliation success rate, freshness SLA, quarantine/retry behaviour, schema contracts, on-call reality.
+- **② Cost** — 🔒 *Deliberately constrained.* Mechanism + non-identifying relative deltas + manual hours removed. No absolute figures.
+- **③ Architecture** — **ERISA-driven ADRs** (retention, auditability, reconciliation guarantees, PII boundary) · C4 Context + Container · dbt tests and data contracts.
 
 Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** → **data-quality contracts** → **deployed (Docker/ECS)** → **monitored**, with written incident/postmortems. Adds a **semantic / metrics layer** for the Analytics-Engineer story, plus an **S3 DataVault Applied-AI layer** (NL-to-SQL over the semantic layer, HITL on every write).
 
@@ -112,10 +114,11 @@ Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** �
 
 ### 🏁 Flagship 3 — [Crucible](https://github.com/manuel-reyes-ml/crucible) · *Autonomous Execution Research* | 🦙 Local-First AI
 
-> **① Production** — Paper→live path with **mandatory human sign-off + kill-switch**; deterministic core owns every trade; intended-vs-filled reconciliation.
-> **② Cost** — Compute cost per backtest sweep, data-feed cost, sweep efficiency (results per compute-hour).
-> **③ Architecture** — Multi-timeframe design · execution and risk-control ADRs · C4 Context + Container · `signalcore` boundary (primitives in, strategy logic out).
 **Backtest → paper → live** autonomous **multi-timeframe (swing → intraday)** research platform *(swing-first is the lower-risk on-ramp; intraday plugins follow once swing clears all three gates)*
+
+- **① Production** — Paper→live path with **mandatory human sign-off + kill-switch**; deterministic core owns every trade; intended-vs-filled reconciliation.
+- **② Cost** — Compute cost per backtest sweep, data-feed cost, sweep efficiency (results per compute-hour).
+- **③ Architecture** — Multi-timeframe design · execution and risk-control ADRs · C4 Context + Container · `signalcore` boundary (primitives in, strategy logic out).
 
 Production-safety engineering for an autonomous system handling irreversible actions: a **mandatory human-in-the-loop sign-off + kill-switch** on the live path, and an **"LLM behind the Wall"** information barrier — the model sees only in-sample aggregated stats, never raw ticker-date outcomes. A **verifier agent** sits before the human gate. Grounded in 5+ years of hands-on independent trading.
 
@@ -135,18 +138,20 @@ Production-safety engineering for an autonomous system handling irreversible act
 
 ### 🧩 Supporting — [FormSense](https://github.com/manuel-reyes-ml/formsense) · *Document AI*
 
-> **① Production** — Deploy path (Docker + CI) with **GEval schema-adherence gates** as merge conditions; smart routing on low confidence.
-> **② Cost** — ⚪ Optional at supporting tier — not manufactured where there is nothing to report.
-> **③ Architecture** — Frozen Pydantic schema contract · full ADR set + C4 Context · document → parse → validate → route boundary.
+- **① Production** — Deploy path (Docker + CI) with **GEval schema-adherence gates** as merge conditions; smart routing on low confidence.
+- **② Cost** — ⚪ Optional at supporting tier — not manufactured where there is nothing to report.
+- **③ Architecture** — Frozen Pydantic schema contract · full ADR set + C4 Context · document → parse → validate → route boundary.
+
 Multimodal **agentic workflow** (Anthropic *Building Effective Agents* taxonomy — precise vocabulary, *not* multi-agent) that extracts and validates synthetic ERISA distribution forms against a frozen Pydantic schema contract, with **GEval schema-adherence** gates and smart routing.
 
 **Tech:** Python • Vision LLM • Streamlit • Pydantic • DeepEval (GEval) • Docker • GitHub Actions CI
 
 ### 🧩 Supporting — [Attention-Flow Catalyst (AFC)](https://github.com/manuel-reyes-ml/attention-flow-catalyst) · *Research*
 
-> **① Production** — Read-only research loop; **faithfulness ≥ 0.9 as a blocking gate** — the eval-first premise is the deliverable.
-> **② Cost** — ⚪ Optional at supporting tier. Where it applies: cost-per-screen-run and embedding/re-index cost.
-> **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · full ADR set + C4 Context · `signalcore` boundary (primitives in, thresholds out).
+- **① Production** — Read-only research loop; **faithfulness ≥ 0.9 as a blocking gate** — the eval-first premise is the deliverable.
+- **② Cost** — ⚪ Optional at supporting tier. Where it applies: cost-per-screen-run and embedding/re-index cost.
+- **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · full ADR set + C4 Context · `signalcore` boundary (primitives in, thresholds out).
+
 Read-only **GraphRAG** financial-research loop over small-cap trigger signals, with a **faithfulness ≥ 0.9** evaluation showcase (financial-data sensitivity). Demonstrates bounded, unattended-safe agent design. *The eval-first faithfulness benchmark ships in S1 → S3.*
 
 **Tech:** Python • DuckDB • Parquet • edgartools • **Neo4j + ChromaDB (GraphRAG)** • **Anthropic SDK** • DeepEval • SelfCheckGPT + FActScore • Docker • CI
