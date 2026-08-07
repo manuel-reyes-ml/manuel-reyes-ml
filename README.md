@@ -32,7 +32,7 @@ My focus is **proof over keywords**: production systems with evaluation gates an
 | 📦 Ten shallow repos | ✅ **Focused portfolio: 3 flagships + 2 supporting** — real systems, not a repo pile |
 | 🤖 "Prompts ChatGPT" | ✅ **Production AI**: Anthropic SDK primary, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Pydantic structured outputs, privacy-routed local models (Ollama/LM Studio) |
 | 📉 No evaluation | ✅ **Eval-first, blocking gates** (DeepEval/RAGAS/GEval, faithfulness ≥ 0.9) — the discipline that separates prototypes from production systems |
-| 🧰 Notebooks & one-off scripts | ✅ **Production engineering**: typed Python, **`uv` + committed `uv.lock`** (reproducible by construction), `pyproject.toml` + `src/`, ruff/mypy, Docker, GitHub Actions CI, Conventional Commits |
+| 🧰 Notebooks & one-off scripts | ✅ **Production engineering**: typed Python, **`uv` + committed `uv.lock`** (reproducible by construction), `pyproject.toml` + `src/`, ruff/mypy, Docker, GitHub Actions CI, Conventional Commits **enforced by a `commit-msg` hook**, and **a pinned `.pre-commit-config.yaml` in every repo** whose hooks are a *strict subset* of the CI gate — so local checks and CI can never quietly disagree |
 | 🖨️ `print()` debugging | ✅ **Observable by construction** — **`structlog`** renders my logs *and my dependencies'* through one chain; a **PII-redaction processor** sits inside it, so masking is structural rather than remembered per call site (the discipline a regulated domain actually requires) |
 | 🗣️ Pure coding-interview prep | ✅ **FDE discovery & decomposition edge** — the customer-facing case-study round that filters most technically-strong candidates; **2 yrs ERISA client-facing operations** is the structural advantage, and every flagship carries an ADR set + C4 diagram to defend the design |
 
@@ -64,7 +64,7 @@ Automated Python ETL for retirement-plan distribution reconciliation in an **ERI
 
 > A deliberately focused portfolio — a few substantial systems, each targeting a different problem: Applied AI, Data Engineering, and autonomous-systems safety.
 >
-> 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • **structured logging (`structlog` over stdlib via `ProcessorFormatter`) + PII-redaction processor** • **typed config** (`pydantic-settings`, `SecretStr` credentials) • **capped jittered retries** (`stamina`) • Conventional Commits • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
+> 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • **a pinned `.pre-commit-config.yaml`** (hooks a strict subset of the CI gate; `gitleaks` + `nbstripout` make *synthetic data only* a mechanical guarantee rather than something to remember; `mypy` deliberately CI-only) • **structured logging (`structlog` over stdlib via `ProcessorFormatter`) + PII-redaction processor** • **typed config** (`pydantic-settings`, `SecretStr` credentials) • **capped jittered retries** (`stamina`) • Conventional Commits • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
 
@@ -238,6 +238,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![ruff](https://img.shields.io/badge/ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black)
 ![uv](https://img.shields.io/badge/uv_sync_--frozen-DE5FE9?style=flat-square&logo=uv&logoColor=white)
 ![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=flat-square&logoColor=white)
+![pre-commit](https://img.shields.io/badge/pre--commit-FAB040?style=flat-square&logo=pre-commit&logoColor=black)
 ![structlog](https://img.shields.io/badge/structlog-3B5F8A?style=flat-square&logoColor=white)
 ![stamina](https://img.shields.io/badge/stamina_(retries)-6A4C93?style=flat-square&logoColor=white)
 ![pydantic-settings](https://img.shields.io/badge/pydantic--settings-E92063?style=flat-square&logo=pydantic&logoColor=white)
@@ -349,6 +350,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 - 🤖 Fascinated by **LLMs transforming financial analysis** — behind eval gates and safety barriers
 - 📚 Reading: *Machine Learning for Algorithmic Trading* • *Hands-On LLMs* • *Building Effective Agents* (Anthropic)
 - ⚡ **Reproducible by default** — uv-managed environments with committed lockfiles across every repo
+- 🪝 **Enforced by default** — pinned pre-commit hooks catch secrets, notebook output and lockfile drift before they reach a commit; `mypy` stays CI-only on purpose, and the reason is written down in an ADR
 - 🔎 **Observable by default** — structured logs with run-scoped context and redaction in the pipeline, not bolted on
 - 🎯 Obsessed with **data-driven decisions** and **proof over keywords**
 
