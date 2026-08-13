@@ -1,12 +1,12 @@
 # Hi, I'm Manuel 👋
 
-![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-Analytics_Engineering_·_Data_Engineering_·_Applied_AI-blueviolet?style=for-the-badge)
+![Production AI](https://img.shields.io/badge/🤖_Production_AI_&_Data_Systems-Analytics_Engineering_·_Data_Engineering-blueviolet?style=for-the-badge)
 
-**🟢 Available 9 October 2026** — open to **Analytics Engineer** and **Data Engineer** roles, and **Applied AI / Forward-Deployed Engineer** roles across industries.
+**🟢 Open to AI-Focused Analytics Engineer and Data Engineer roles.**
 
 **Production AI & data systems** | Eval-first · measurable outcomes · proof over keywords
 
-[![Available](https://img.shields.io/badge/🟢_Available-9_October_2026-success?style=flat-square)](mailto:manuelreyesv410@gmail.com)
+[![Open to work](https://img.shields.io/badge/🟢_Open_to-Analytics_Engineer_·_Data_Engineer-success?style=flat-square)](mailto:manuelreyesv410@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:manuelreyesv410@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Projects-667eea)](https://github.com/manuel-reyes-ml/data-portfolio)
@@ -20,7 +20,7 @@
 - 🧾 **DataVault / 1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship — and the gate my next move is scheduled against)*
 - 🔤 **Vercel AI SDK 7 last mile** — a streaming Claude-powered UI over PolicyPulse retrieval (TypeScript + Zod + React). Python still owns the agentic loop.
 
-**Where I'm headed:** **Analytics Engineer** is the first door — it's the target where a live production pipeline in a regulated environment reads as *experience*, not as a portfolio exercise. **Data Engineer** in parallel. **After that:** **Applied AI Engineer** on a Forward-Deployed Engineer (FDE) track.
+**What I'm targeting now:** **AI-Focused Analytics Engineer** is the first door — it's the target where a live production pipeline in a regulated environment reads as *experience*, not as a portfolio exercise. **Data Engineer** runs in parallel. *(Longer-term trajectory is Applied AI / FDE — see the Path below.)*
 
 ---
 
@@ -190,26 +190,9 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ---
 
-## ⭐ Core Stack — what I'm hiring-ready on today
+## 🛠️ Skills & Tooling
 
-*The tools the flagships actually ship on. Everything below this block is the broader toolkit and forward build targets.*
-
-![Python](https://img.shields.io/badge/Python_3.14-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Anthropic_SDK-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![DeepEval](https://img.shields.io/badge/DeepEval_/_RAGAS-FF6B6B?style=for-the-badge&logoColor=white)
-![uv](https://img.shields.io/badge/uv_+_uv.lock-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
-
----
-
-## 🛠️ Broader Toolkit & Stage 2–3 Build Targets
-
-> Tracked here for completeness. Depth varies — the **Core Stack** above is what the shipped systems run on; items marked 🆕 are active build targets rather than completed claims.
+> **Where each of these is actually used is in the per-project tech stacks above** — that's the evidence; this is the index. Depth varies by design: items marked 🆕 are **active build targets, not completed claims**.
 
 **Languages & Dev Tools**
 
@@ -379,7 +362,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ## ⚡ Quick Facts
 
-- 🟢 **Available 9 October 2026** — Analytics Engineer · Data Engineer · Applied AI / FDE
+- 🟢 **Open to AI-Focused Analytics Engineer and Data Engineer roles**
 - 🧾 **Live production system** in a regulated financial domain — with evaluation gates, not vibes
 - 🏰 **Finance/ERISA + trading domain depth** — 2 yrs ERISA-regulated operations + 5+ yrs independent trading
 - 🌅 **4:30 AM club** (early-morning focused study) — **25 hrs/week**, sustained
@@ -414,8 +397,8 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ## 🌐 Let's Connect
 
-**🟢 Available 9 October 2026. Open to:**
-- 💼 **Analytics Engineer** (first door) and **Data Engineer** roles — and **Applied AI / Forward-Deployed Engineer** roles across industries
+**🟢 Open to:**
+- 💼 **AI-Focused Analytics Engineer** (first door) and **Data Engineer** roles
 - 🤝 Code reviews and technical discussions
 - 🎓 Knowledge exchange on data + AI + finance
 
@@ -428,7 +411,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 <div align="center">
 
-**🟢 Available 9 October 2026** | Building in Public • Evidence-First
+**🟢 Open to Analytics Engineer · Data Engineer roles** | Building in Public • Evidence-First
 
 ⭐️ **Star repos** if useful • 🔔 **Follow** for updates on the ~32-month journey
 
