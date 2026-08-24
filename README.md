@@ -16,7 +16,8 @@
 ## 🎯 What I'm Building Right Now
 
 - 🏗️ **PolicyPulse** — RAG → GraphRAG chatbot over retirement-plan documents, with **blocking eval gates** (RAGAS/DeepEval) and a **FastMCP server**. *(Applied-AI flagship)*
-- 🧾 **DataVault / 1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship — and the gate my next move is scheduled against)*
+- 🧾 **DataVault / 1099 Data Platform** — hardening a **live** financial ETL system into a full data platform: Polars ingestion, dbt-tested models, orchestration, data contracts, containerized deploy. *(Data Engineering flagship — and the gate my next move is scheduled against)*
+- 🧾 **PostCheck** — autonomous post-posting QA review agent for regulated distributions: agentic adjudication against a versioned SOP, plus an event log feeding a **dbt-modelled quality mart**. *(Dual-target flagship — evidences Applied AI and Analytics/Data Engineering in one system)*
 - 🔤 **Vercel AI SDK 7 last mile** — a streaming Claude-powered UI over PolicyPulse retrieval (TypeScript + Zod + React). Python still owns the agentic loop.
 
 **What I'm targeting now:** **AI-Focused Analytics Engineer** is the first door — it's the target where a live production pipeline in a regulated environment reads as *experience*, not as a portfolio exercise. **Data Engineer** runs in parallel. *(Longer-term trajectory is Applied AI / FDE — see the Path below.)*
@@ -31,12 +32,14 @@ My focus is **proof over keywords**: production systems with evaluation gates an
 |:----------------|:-------------|
 | 🎓 Tutorial projects (Titanic, taxi data) | ✅ **Live production ETL** in an **ERISA-regulated retirement-plan operations environment** — with a derived-vs-reported validation gate that quarantines mismatches before distribution |
 | ❌ No domain expertise | ✅ **15+ yrs business operations** (manufacturing, digital marketing) · **2 yrs ERISA-regulated financial operations** · **5+ yrs independent trading** |
-| 📦 Ten shallow repos | ✅ **Focused portfolio: 3 flagships + 2 supporting** — real systems, not a repo pile |
+| 📦 Ten shallow repos | ✅ **Focused portfolio: 4 flagships + 2 supporting** — real systems, not a repo pile |
 | 🤖 "Prompts ChatGPT" | ✅ **Production AI**: Anthropic SDK primary, RAG + **GraphRAG (Neo4j)**, **FastMCP server**, Pydantic structured outputs, privacy-routed local models (Ollama/LM Studio) |
 | 📉 No evaluation | ✅ **Eval-first, blocking gates** (DeepEval/RAGAS/GEval, faithfulness ≥ 0.9) — the discipline that separates prototypes from production systems |
+| 📊 "Accuracy" as the metric | ✅ **The right gate for the cost asymmetry** — on PostCheck the blocking gate is **false-NIGO rate, not accuracy**: precision blocks the merge, recall is reported. A review agent that cries wolf destroys the trust it needs to be useful |
 | 🧰 Notebooks & one-off scripts | ✅ **Production engineering**: typed Python **3.14**, **`uv` + committed `uv.lock`** (reproducible by construction), `pyproject.toml` + `src/`, ruff/mypy, Docker, GitHub Actions CI, Conventional Commits **enforced by a `commit-msg` hook**, and **a pinned `.pre-commit-config.yaml` in every repo** whose hooks are a *strict subset* of the CI gate — so local checks and CI can never quietly disagree |
 | 🖨️ `print()` debugging | ✅ **Observable by construction** — **`structlog`** renders my logs *and my dependencies'* through one chain; a **PII-redaction processor** sits inside it, so masking is structural rather than remembered per call site (the discipline a regulated domain actually requires) |
 | 📌 "Latest version" as a default | ✅ **Versions are decisions with falsifiers** — Python is pinned at **3.14, standard GIL build** (the free-threaded `python3.14t` build is deliberately *not* used), declared **once** in `requires-python` and read by ruff, mypy, the Dockerfile and the CI matrix. A mismatch is a **CI failure, not a lint warning** |
+| 🐼 "pandas for everything" | ✅ **Engine choice is an architecture decision** — **Polars** owns ingestion, schema enforcement and bulk transforms; **pandas is retained deliberately** at the `openpyxl` template write and the plotting hand-off; business logic lives in **dbt**, not in either engine. The reviewable artifact is the **ADR plus a `.explain()` query plan**, not a benchmark on a small dataset |
 | 🗣️ Pure coding-interview prep | ✅ **FDE discovery & decomposition edge** — the customer-facing case-study round that filters most technically-strong candidates; **2 yrs ERISA client-facing operations** is the structural advantage, and every flagship carries an ADR set + C4 diagram to defend the design |
 
 ---
@@ -59,15 +62,19 @@ Automated Python ETL for retirement-plan distribution reconciliation in an **ERI
 
 **Tech:** Python • pandas • openpyxl • matplotlib • data validation • pytest • GitHub Actions CI • faker (synthetic data)
 
+> 🧭 *The shipped S1 pandas pipeline is not rewritten — it is **frozen as the "before"**, and the Polars/dbt delta becomes the S2 headline metric.*
+
 **[→ View Documentation & Code](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)**
 
 ---
 
-## 🏆 Portfolio — 3 Flagships + 2 Supporting
+## 🏆 Portfolio — 4 Flagships + 2 Supporting
 
-> A deliberately focused portfolio — a few substantial systems, each targeting a different problem: Applied AI, Data Engineering, and autonomous-systems safety.
+> A deliberately focused portfolio — a few substantial systems, each targeting a different problem: Applied AI, Data Engineering, autonomous-systems safety, and regulated-operations QA.
 >
 > 🏗️ **Production standard (every repo):** architecture diagram (Mermaid) • **ADR set (`docs/adr/`) + C4 context diagram** • Dockerfile • evaluation-metrics table • 15–30s demo GIF • "What I Learned." **Standards, non-negotiable:** no vibe coding (every line understood before merge) • eval-first blocking gates • **synthetic data only** in public repos • **Python 3.14** · `pyproject.toml` + **`uv.lock`** + `src/` + `py.typed` + ruff + mypy • **a pinned `.pre-commit-config.yaml`** (hooks a strict subset of the CI gate; `gitleaks` + `nbstripout` make *synthetic data only* a mechanical guarantee rather than something to remember; `mypy` deliberately CI-only) • **structured logging (`structlog` over stdlib via `ProcessorFormatter`) + PII-redaction processor** • **typed config** (`pydantic-settings`, `SecretStr` credentials) • **capped jittered retries** (`stamina`) • Conventional Commits • **branch → PR → self-review → merge** (not direct commits to `main`) • **uv-managed environments** (`uv sync --frozen` in CI/Docker; no `requirements.txt`).
+>
+> *Flagship vs supporting denotes **size and emphasis, not a quality tier** — every project carries the full standard. Each is **one system evolved S1 → S3**, never rebuilt per stage.*
 
 ### 🏁 Flagship 1 — [PolicyPulse](https://github.com/manuel-reyes-ml/policypulse) · *Applied-AI*
 
@@ -106,13 +113,14 @@ Ingestion → **dbt-tested models (CI-gated)** → **orchestrated (Airflow)** �
 
 | Layer | Implementation |
 |-------|----------------|
+| ⚡ Ingestion & transforms | **Polars** — ingestion, schema enforcement, bulk transforms; pandas retained at the `openpyxl` template write and plotting hand-off (an ADR, not an accident) |
 | 🔄 Transformation | **dbt** — tested models at real scale, docs alongside code, CI that gates merges |
 | 🗓️ Orchestration | **Airflow** DAGs with retries, alerting, monitoring |
 | 🛡️ Quality & governance | Data contracts, **dbt tests / Great Expectations**, lineage, access-control awareness |
 | 📦 Deploy & ops | **Docker → ECS/Fargate**, Terraform basics, incident writeups |
 | 📊 Semantic layer | Metric definitions + dashboard handoff (Power BI) — the AE differentiator |
 
-**Tech:** Python • SQL • **dbt** • **Airflow** • **Snowflake** (primary warehouse) • BigQuery/Fabric awareness • DuckDB • Parquet • **Great Expectations** • Docker • **AWS (S3, ECS)** • **Terraform** • GitHub Actions CI
+**Tech:** Python • SQL • **Polars** • **dbt** • **Airflow** • **Snowflake** (primary warehouse) • BigQuery/Fabric awareness • DuckDB • Parquet • **Great Expectations** • Docker • **AWS (S3, ECS)** • **Terraform** • GitHub Actions CI
 
 **Retains scheduling priority** — S2 hardening is the evidence gate the next move is scheduled against.
 
@@ -130,15 +138,40 @@ Production-safety engineering for an autonomous system handling irreversible act
 
 | Dimension | Implementation |
 |-----------|----------------|
-| 🔒 Integrity | Sealed out-of-sample vault, logged overfitting budget, walk-forward CV |
+| 🔒 Integrity | Sealed out-of-sample vault, logged overfitting budget, walk-forward CV, purged k-fold + embargo |
 | 🛡️ AI safety | LLM behind the Wall (aggregates only); deterministic core owns every trade; kill-switch on live path |
 | ✅ Verification | Verifier-agent layer **before** the human sign-off gate |
 | 📏 Agentic evals | **Tool Correctness = 1.0** (deterministic) · **Task Completion > 0.8** (judged), published |
 | 🔌 Plugins | Strategies are plugins (Protocol + ABC + registry); IT-1 ORB + VWAP Reclaim prove the abstraction |
 
+> 🧭 **Positioning, stated precisely:** this is **systematic-trading systems engineering**, not quant research. The defensible claim is execution-safety and market-data engineering — *"here is how I made an irreversible system safe"* — never a Sharpe ratio.
+
 **Tech:** Python • own event-driven backtest harness → **NautilusTrader** • Optuna • DuckDB • Parquet • **Ollama/Qwen3 (local-first)** → Anthropic/Gemini • Pydantic • **LangGraph** • **Alpaca** + **Schwab/TOS** • DeepEval • Docker • GitHub Actions CI • **uv** *(Conda conditional — only if compiled/GPU backends land)*
 
 > ⚖️ *Educational/research project. Not investment advice; makes no claim of positive expectancy — validation is the entire point.*
+
+---
+
+### 🏁 Flagship 4 — [PostCheck](https://github.com/manuel-reyes-ml/postcheck) · *Dual-target: Applied AI **and** Analytics/Data Engineering*
+
+**Autonomous post-posting QA review for regulated distribution operations** — the only project whose single deliverable produces first-class evidence for **both** target doors.
+
+- **① Production** — **Read-only and advisory — a binding, tested safety invariant.** Never keys, posts, reverses or corrects; never contacts a participant, advisor, TPA or sponsor; never edits SSN, name or DOB. An IGO verdict is a **recommendation to a human, never an authorization**.
+- **② Cost** — Provider-agnostic across three named substrates (**Anthropic · Azure OpenAI via Microsoft Foundry · local Ollama**); one eval suite, gates run per substrate.
+- **③ Architecture** — The spreadsheet is a **rendered export, never the source of truth** · declared grain (`fct_document_reviews` = one row per packet × review run) · ADRs + C4 Context + Container.
+
+It watches an intake folder and claims each packet **exactly once** (event-as-hint + poll floor + content-hash idempotency + lease TTL), parses the posted-transaction export **deterministically** (row-type discriminator dispatch — *the LLM never sees the workbook*), segments and extracts a scanned multi-document packet with a multimodal model, routes on form family, resolves live-vs-dead payee legs, then adjudicates against a **versioned SOP** across a fixed 15-item verification surface (PASS / EXCEPTION / CRITICAL / N/A) → **IGO** / **NIGO (needs clarification)** / **NIGO (do not process)**. Findings escalate to the human processor with field, form value, export value, **SOP citation** and fix.
+
+| Door | What this system evidences |
+|------|----------------------------|
+| 🤖 **Applied AI** | Agentic adjudication with a **hard escalation boundary** · multimodal reasoning over scanned packets · three-layer eval with a blocking gate · MCP + HITL |
+| 📊 **Analytics / Data Engineering** | **Exactly-once event ingestion** · deterministic parsing of a ragged block-structured source · **append-only event log with a declared grain** · dbt models + contracts · a metrics layer answering a real operational question (first-pass IGO rate, reason Pareto, reason-mix drift, agent-vs-human agreement) |
+
+**📏 Measured against a real incumbent** — a prompt-only reviewer already in use — so the headline is a genuine before/after rather than an unfalsifiable claim. Headline metric: **false-CRITICAL rate** against a flattened-text baseline running the identical rule pack on the identical golden set. **The blocking gate is false-NIGO rate, not accuracy.** **Synthetic corpus only** — the controlled-NIGO-injection generator is itself a portfolio artifact and the only route to ground-truth labels.
+
+> 🔀 **PostCheck is not FormSense.** FormSense is **pre-index** — is this form complete and legible enough to file? It judges the form *against itself*. PostCheck is **post-posting** — does the posted transaction match the request and comply with the SOP? It judges the form *against the posted export*. Different position in the workflow, different source of truth, different escalation target. **Never merged.**
+
+**Tech:** Python • **Anthropic SDK** • Azure OpenAI / Microsoft Foundry • **Ollama (local)** • multimodal extraction • Pydantic • **dbt** • DeepEval • **FastMCP** • Docker • GitHub Actions CI
 
 ---
 
@@ -158,7 +191,7 @@ Multimodal **agentic workflow** (Anthropic *Building Effective Agents* taxonomy 
 - **② Cost** — ⚪ Optional at supporting tier. Where it applies: cost-per-screen-run and embedding/re-index cost.
 - **③ Architecture** — GraphRAG (Neo4j + ChromaDB) · full ADR set + C4 Context · `signalcore` boundary (primitives in, thresholds out).
 
-Read-only **GraphRAG** financial-research loop over small-cap trigger signals, with a **faithfulness ≥ 0.9** evaluation showcase (financial-data sensitivity). Demonstrates bounded, unattended-safe agent design. *The eval-first faithfulness benchmark ships in S1 → S3.*
+Read-only **GraphRAG** financial-research loop over small-cap trigger signals, with a **faithfulness ≥ 0.9** evaluation showcase (financial-data sensitivity). Demonstrates bounded, unattended-safe agent design. *The eval-first faithfulness benchmark ships in S1 → S3.* This is **financial NLP/RAG with an eval spine** — finance is the substrate, faithfulness measurement is the method; there are no returns and no factor construction.
 
 **Tech:** Python • DuckDB • Parquet • edgartools • **Neo4j + ChromaDB (GraphRAG)** • **Anthropic SDK** • DeepEval • SelfCheckGPT + FActScore • Docker • CI
 
@@ -177,8 +210,9 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 | Type | Repository | Description |
 |------|------------|-------------|
 | 🏁 **Flagship — Applied AI** | [policypulse](https://github.com/manuel-reyes-ml/policypulse) | RAG → GraphRAG + FastMCP + access-control retrieval |
-| 🏁 **Flagship — Data Eng** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | DataVault: live ETL → production data platform (dbt/Airflow/contracts) |
+| 🏁 **Flagship — Data Eng** | [1099_reconciliation_pipeline](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline) | DataVault: live ETL → production data platform (Polars/dbt/Airflow/contracts) |
 | 🏁 **Flagship — Autonomous** | [crucible](https://github.com/manuel-reyes-ml/crucible) | Backtest→paper→live; HITL + kill-switch + LLM-behind-the-Wall |
+| 🏁 **Flagship — Dual-target** | [postcheck](https://github.com/manuel-reyes-ml/postcheck) | Agentic SOP adjudication + exactly-once event log → dbt NIGO quality mart |
 | 🧩 **Supporting — Doc AI** | [formsense](https://github.com/manuel-reyes-ml/formsense) | Multimodal agentic-workflow form extraction & validation |
 | 🧩 **Supporting — Research** | [attention-flow-catalyst](https://github.com/manuel-reyes-ml/attention-flow-catalyst) | Read-only GraphRAG financial research (faithfulness ≥ 0.9) |
 | 📅 **Backlog** | [operations-demand-intelligence](https://github.com/manuel-reyes-ml/operations-demand-intelligence) | Workflow-demand analytics |
@@ -210,7 +244,8 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 **Data Analysis & Processing**
 
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Polars](https://img.shields.io/badge/Polars_(default_engine)-CD792C?style=flat-square&logo=polars&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas_(boundary--scoped)-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 ![Parquet](https://img.shields.io/badge/Parquet-50ABF1?style=flat-square&logoColor=white)
@@ -231,6 +266,13 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![Great Expectations](https://img.shields.io/badge/Great_Expectations-FF6310?style=flat-square&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS_(S3/ECS)-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-🆕_S2-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+
+**AI-Ready Data Infrastructure** 🆕 *Stage 2 build — the depth behind "AI-focused"*
+
+![Embedding pipelines](https://img.shields.io/badge/Embedding_pipelines-🆕_S2-4B8BBE?style=flat-square&logoColor=white)
+![Vector governance](https://img.shields.io/badge/Vector_schemas_&_retrieval_governance-🆕_S2-6A4C93?style=flat-square&logoColor=white)
+![PII-safe corpora](https://img.shields.io/badge/PII--safe_corpus_prep-🆕_S2-C0392B?style=flat-square&logoColor=white)
+![Point-in-time](https://img.shields.io/badge/Point--in--time_correctness_&_leakage_detection-🆕_S2-1E8449?style=flat-square&logoColor=white)
 
 **Visualization & BI**
 
@@ -262,6 +304,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![React](https://img.shields.io/badge/React_(last_mile)-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
 ![Gemini SDK](https://img.shields.io/badge/Gemini_SDK-8E75B2?style=flat-square&logo=google&logoColor=white)
+![Azure OpenAI](https://img.shields.io/badge/Azure_OpenAI_/_Foundry-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama_(local--first)-000000?style=flat-square&logo=ollama&logoColor=white)
 ![LM Studio](https://img.shields.io/badge/LM_Studio_(local)-4A154B?style=flat-square&logoColor=white)
@@ -269,7 +312,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 ![FastMCP](https://img.shields.io/badge/FastMCP-7C3AED?style=flat-square&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white)
-![OpenCode](https://img.shields.io/badge/OpenCode_(agentic_harness)-000000?style=flat-square&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode_+_Claude_Code_(dual_harness)-000000?style=flat-square&logoColor=white)
 ![PandasAI](https://img.shields.io/badge/PandasAI-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square&logoColor=white)
@@ -324,10 +367,11 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 
 ### Certification stack — *replace, not stack* (each credential serves a named purpose)
 
+**Committed — eight exams, ≈ $1,029 total, all self-funded**
+
 | Cert | Cost (USD) | Stage |
 |------|-----------|-------|
 | ![AI-901](https://img.shields.io/badge/Azure_AI_Fundamentals-AI--901-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | **$99** | S1 |
-| ![AB-620](https://img.shields.io/badge/AI_Agent_Builder_Assoc-AB--620-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | **$165** | S1–S2 |
 | ![DP-700](https://img.shields.io/badge/Fabric_Data_Engineer-DP--700-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | **$165** | S2 |
 | ![AWS DEA](https://img.shields.io/badge/AWS_Data_Engineer-Associate-232F3E?style=flat-square&logo=amazonaws&logoColor=white) | **$150** | S2 |
 | ![NCA-GENL](https://img.shields.io/badge/NVIDIA-NCA--GENL-76B900?style=flat-square&logo=nvidia&logoColor=white) | **$125** | S3 |
@@ -335,15 +379,24 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 | ![Neo4j](https://img.shields.io/badge/Neo4j-Certified_Professional-008CC1?style=flat-square&logo=neo4j&logoColor=white) | **Free** | S3 |
 | ![AI-103](https://img.shields.io/badge/Azure_AI_Apps_&_Agents_Dev-AI--103-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | **$165** | S3 |
 | ![CCA-F](https://img.shields.io/badge/Anthropic-CCA--F-D97757?style=flat-square&logo=anthropic&logoColor=white) | **~$125** ⚠️ | S3 |
-| ![dbt AE](https://img.shields.io/badge/dbt_Analytics_Engineering-conditional-FF694B?style=flat-square&logo=dbt&logoColor=white) | **Free** *(conditional)* | S2 |
 
-> **AI-103** (code-first Azure/Foundry — Python, agentic + RAG) is the Azure mirror of **CCA-F**: AB-620 is the low-code Copilot Studio maker path, AI-103 the code-first developer path.
-> **All certifications are self-funded** — ≈ **$1,194** committed across three stages, ≈ **$1,394** with the optional lakehouse slot. ⚠️ CCA-F pricing and its access route both post-date the Pearson VUE migration and are confirmed at booking.
-> *Optional lakehouse slot — **three co-equal options, take exactly ONE**, matched to a target employer's stack, never stacked: **DP-750** ($165) · **SnowPro Core** COF-C03 ($175) · **Databricks DE Associate** ($200). No default is set on purpose: they sit within $35 of each other, and the deciding input is the target employer's stack.*
+**⏸️ Conditional — taken only on a named trigger, never stacked**
+
+| Cert | Cost (USD) | Trigger |
+|------|-----------|---------|
+| ![AB-620](https://img.shields.io/badge/AI_Agent_Builder_Assoc-AB--620-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | ~$165 | A deliberate decision to specialize in the Microsoft ecosystem. It's the **low-code Copilot Studio maker path** — and this portfolio's evidence standard is production Python. **AI-103 is the committed code-first Azure credential.** |
+| ![dbt AE](https://img.shields.io/badge/dbt_Analytics_Engineering-conditional-FF694B?style=flat-square&logo=dbt&logoColor=white) | ~$200 | The apply list names dbt certification in ≥3 postings, **or** DataVault S2 dbt models ship with budget slack. *The tested dbt project with CI is the primary signal; the cert is a tiebreaker, not the unlock.* |
+| ![Lakehouse](https://img.shields.io/badge/Lakehouse_slot-take_exactly_ONE-4B8BBE?style=flat-square&logoColor=white) | $165–200 | **DP-750** ($165) · **SnowPro Core** COF-C03 ($175) · **Databricks DE Associate** ($200). No default is set on purpose — they sit within $35 of each other, and the deciding input is the target employer's stack. |
+
+> **All certifications are self-funded.** **Eight committed ≈ $1,029** across three stages; **≈ $1,594** full-canon ceiling if every conditional is taken. ⚠️ CCA-F pricing and its access route both post-date the Pearson VUE migration and are confirmed at booking.
+>
+> **AI-103** (code-first Azure/Foundry — Python, agentic + RAG) is the Azure mirror of **CCA-F**. The low-code Copilot Studio path (AB-620) is deliberately *not* the committed one.
 
 ### Coursework credentials (Coursera Professional Certificates)
 - 🚧 **IBM Generative AI Engineering Professional Certificate** (16 courses) — *Stage 1 spine*: RAG, LangChain, fine-tuning, deployment
-- 📅 **AWS Data Engineering Professional Certificate** — *Stage 2 DE spine*: S3, Redshift, Glue, EMR, Kinesis
+- 📅 **DeepLearning.AI Data Engineering Professional Certificate (with AWS)** — *Stage 2 DE spine* (Joe Reis): ingestion, transformation, storage, serving on S3/Glue/Kinesis/Redshift
+- 📅 **IBM AI-Native Data Engineering Professional Certificate** — *Stage 2 AI-native layer*: vector schemas & retrieval governance, **PII-safe corpus preparation**, reproducible ML-ready datasets with **point-in-time correctness**
+- 📅 **Snowflake Data Engineering Professional Certificate** — *Stage 2*: the "one warehouse deep," paired with dbt
 
 ### Active learning (Stage 1)
 - 🚧 **CS50: Introduction to Computer Science** (Harvard) — CS fundamentals + OMSCS admission evidence
@@ -354,6 +407,7 @@ Read-only **GraphRAG** financial-research loop over small-cap trigger signals, w
 - 🚧 **Vercel Academy — Builders Guide to the AI SDK** — the last-mile build source (v7-current: `Output.object()`, `instructions`)
 - 🚧 **MCP: Build Rich-Context AI Apps with Anthropic** (primer) • **AI Prompting for Everyone** • **30 Days of Streamlit** • **Docker for Beginners** (KodeKloud)
 - 🚧 **uv — Python packaging & environments** ([Astral official docs](https://docs.astral.sh/uv/) + [Al Sweigart's quickstart](https://inventwithpython.com/blog/uv-quickstart-tutorial.html)) — the tool every repo now builds on
+- 🚧 **Architecture documentation: C4 + ADR** ([c4model.com](https://c4model.com/) + AWS Prescriptive Guidance) — no certification exists; the artifact in the repo is the signal
 - ⏸️ *Conditional:* **Conda Basics** (Anaconda Learning) — reserved for Crucible **only if** it grows compiled numerical / CUDA / BLAS backends
 - ⭐ *Elective:* **Statistics with Python** (U. Michigan) — inferential module feeds eval statistics
 
