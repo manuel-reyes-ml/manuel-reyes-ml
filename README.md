@@ -1,8 +1,8 @@
 # Hi, I'm Manuel 👋
 
-### Analytics Engineering · Data Engineering · Applied AI behind evaluation gates
+### Analytics Engineer · Data Engineer — AI-ready data platforms
 
-🟢 **Open to Analytics Engineer and Data Engineer roles — available now.**
+🟢 **Open to Analytics Engineer and Data Engineer roles** — especially teams building **AI-ready data** (semantic layers, embedding pipelines, evaluation-gated AI). **Available now.** Greenville, SC · remote or hybrid
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mr410-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
@@ -75,7 +75,7 @@ Ordered by the roles I'm targeting. Status: ✅ live · 🏗️ in build · 📐
 | Stage | Focus | Status |
 |---|---|---|
 | **1** · Months 1–8 | Production Python, SQL + dbt, eval-first AI — *the build work* | 🟢 Active — exits when DataVault S2 ships |
-| **2** · Months 9–20 | **Analytics Engineer** (first door) · AI-focused **Data Engineer** | 🎯 Target role |
+| **2** · Months 9–20 | **Analytics Engineer** (first door) · **Data Engineer** — AI-ready data | 🎯 Target role |
 | **3** · Months 21–32 | Applied AI Engineer → Forward-Deployed Engineer | 🎯 Long term |
 
 What I'm studying and why → **[learning_journey](https://github.com/manuel-reyes-ml/learning_journey)** · every decision and its rationale → **[roadmap](https://manuel-reyes-ml.github.io/learning_journey/roadmap.html)**
