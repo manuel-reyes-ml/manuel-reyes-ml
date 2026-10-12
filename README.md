@@ -2,7 +2,7 @@
 
 ### Analytics Engineering · Data Engineering · Applied AI behind evaluation gates
 
-🟢 **Open to Analytics Engineer and Data Engineer roles — available now.** Greenville, SC · remote or hybrid
+🟢 **Open to Analytics Engineer and Data Engineer roles — available now.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mr410-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
