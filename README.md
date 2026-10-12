@@ -2,7 +2,7 @@
 
 ### Analytics Engineer · Data Engineer — AI-ready data platforms
 
-🟢 **Open to Analytics Engineer and Data Engineer roles** — especially teams building **AI-ready data** (semantic layers, embedding pipelines, evaluation-gated AI). **Available now.**
+🟢 **Open to Analytics Engineer and Data Engineer roles** — especially teams building **AI-ready data** (semantic layers, embedding pipelines, evaluation-gated AI). **Available now.** Greenville, SC · remote or hybrid
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mr410-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
@@ -32,16 +32,16 @@ I build data pipelines that have to be right — where a wrong number becomes a 
 
 ## 🏆 Portfolio
 
-Ordered by the roles I'm targeting. Status: ✅ live · 🏗️ in build · 📐 designed · 📅 planned
+Every project puts AI to work — **powered** where the model does the core job, **assisted** where a deterministic core must make the decision. Ordered by the roles I'm targeting. Status: ✅ live · 🏗️ in build · 📐 designed · 📅 planned
 
 | Project | What it proves | For | Status |
 |---|---|---|---|
-| **[DataVault / 1099 Data Platform](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)** | Live reconciliation ETL → dbt-tested models with a declared grain, data contracts, orchestration and a semantic layer | AE · DE | ✅ S1 live · 🏗️ S2 |
-| **[PostCheck](https://github.com/manuel-reyes-ml/postcheck)** | Read-only QA agent for posted distributions: exactly-once ingestion → append-only event log → dbt quality mart. The blocking gate is false-NIGO rate, not accuracy | AE · DE · AI | 📐 |
-| **[PolicyPulse](https://github.com/manuel-reyes-ml/policypulse)** | Cited-answer RAG → GraphRAG over plan documents; access control enforced at retrieval; RAGAS/DeepEval gates block merges; FastMCP server | Applied AI | 🏗️ |
-| **[Crucible](https://github.com/manuel-reyes-ml/crucible)** | Backtest → paper → live trading platform where a deterministic core owns every order — human sign-off, kill-switch, the LLM sees aggregates only | Applied AI · safety | 🏗️ |
-| [AFC](https://github.com/manuel-reyes-ml/attention-flow-catalyst) *(supporting)* | AI-powered predictive trigger analysis for small caps: point-in-time event study + ML meta-labeling, reported as calibrated lift with false-discovery control — never returns | Applied AI · data | 🏗️ |
-| [FormSense](https://github.com/manuel-reyes-ml/formsense) *(supporting)* | Multimodal extraction of distribution forms against a frozen Pydantic contract, with schema-adherence gates and low-confidence routing | Applied AI | 📅 |
+| **[DataVault](https://github.com/manuel-reyes-ml/1099_reconciliation_pipeline)**<br>*AI-assisted 1099 data platform* | Live reconciliation ETL → dbt-tested models with a declared grain, data contracts and a semantic layer. An LLM explains exceptions and, in Stage 3, proposes corrections — a human approves every write | AE · DE | ✅ S1 live · 🏗️ S2 |
+| **[PostCheck](https://github.com/manuel-reyes-ml/postcheck)**<br>*AI-powered QA review agent* | Multimodal extraction of scanned packets + agentic adjudication against a versioned SOP (rules first, LLM on the residual). Exactly-once ingestion → dbt quality mart; the blocking gate is false-NIGO rate | AE · DE · AI | 📐 |
+| **[PolicyPulse](https://github.com/manuel-reyes-ml/policypulse)**<br>*AI-powered policy assistant* | Cited-answer RAG → GraphRAG over policy documents; access control enforced at retrieval; RAGAS/DeepEval gates block merges; FastMCP server | Applied AI | 🏗️ |
+| **[Crucible](https://github.com/manuel-reyes-ml/crucible)**<br>*AI-assisted trading research* | An LLM analyst reads aggregated backtests and proposes hypotheses; a deterministic core owns every order; human sign-off + kill-switch on the live path | Applied AI · safety | 🏗️ |
+| [AFC](https://github.com/manuel-reyes-ml/attention-flow-catalyst)<br>*AI-powered predictive trigger analysis* · supporting | ML meta-labeling + an LLM filing analyst on a point-in-time event study — calibrated lift with false-discovery control, never returns | Applied AI · data | 🏗️ |
+| [FormSense](https://github.com/manuel-reyes-ml/formsense)<br>*AI-powered form validator* · supporting | Multimodal extraction of distribution forms against a frozen Pydantic contract; schema-adherence gates; low-confidence routing | Applied AI | 📅 |
 
 **Full write-ups** — Production · Cost · Architecture for every project, scope documents and the production standard → **[data-portfolio](https://github.com/manuel-reyes-ml/data-portfolio)**
 
