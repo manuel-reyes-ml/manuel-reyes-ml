@@ -2,7 +2,7 @@
 
 ### Analytics Engineer · Data Engineer — AI-ready data platforms
 
-🟢 **Open to Analytics Engineer and Data Engineer roles** — especially teams building **AI-ready data** (semantic layers, embedding pipelines, evaluation-gated AI). **Available now.** Greenville, SC · remote or hybrid
+🟢 **Open to Analytics Engineer and Data Engineer roles** — especially teams building **AI-ready data** (semantic layers, embedding pipelines, evaluation-gated AI). **Available now.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mr410-0077B5?logo=linkedin)](https://www.linkedin.com/in/mr410/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:manuelreyesv410@gmail.com)
